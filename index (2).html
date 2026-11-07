@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="جسر الكلام يساعد المصابين بأبراكسيا الكلام والتوحد ومتلازمة داون على التواصل، ويشرح للعائلات ما هي أبراكسيا الكلام.">
+<meta name="theme-color" content="#F8ECD9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23EDB8DD' stroke='%233B1626' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 15a2 2 0 0 0 2 2h12l4 4V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>جسر الكلام</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;700;800&family=Readex+Pro:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: one phone-width column on warm cream; content sits in wavy periwinkle blobs and white-outlined speech bubbles, like the Speech Apraxia Guide brochure. Plum ink, never black. */
+:root{
+  --bg:#F8ECD9; --card:#FFFAF2; --ink:#3B1626; --muted:#7B5D66; --line:#EAD7C2; --soft:#F4E4CE; --outline:#FFFFFF;
+  --blue:#B3C8F0; --blue-soft:#DFE8F8; --blue-text:#2F4E92;
+  --pink:#EDB8DD; --pink-soft:#F8E0F0; --pink-text:#94306B;
+  --orange:#D2541A; --orange-soft:#FDE2CF; --orange-text:#B0441A; --spark:#F07228;
+  --rose:#B53F7E; --rose-soft:#F8DDEF; --rose-line:#E7A6CF;
+  --sage:#4E73C2; --sage-soft:#DFE8F8;
+  --amber:#C97A12; --amber-soft:#FCE8C8;
+  --ok:#2D8458; --ok-soft:#DCF0E3; --bad:#BE3B4B; --bad-soft:#FADCE0;
+  --lip:#EAA0B8; --mouth:#4A1C2C; --tongue:#E27596; --tooth:#FFFFFF;
+  --shadow:0 4px 0 rgba(59,22,38,.07);
+  --pa:var(--orange); --pa-soft:var(--orange-soft); --pa-line:#F2B48C; --pa-ink:#FFFFFF; --pa-text:var(--orange-text);
+  --display:"Baloo Bhaijaan 2","Readex Pro",ui-rounded,system-ui,sans-serif;
+  --body:"Readex Pro","Lexend",ui-rounded,system-ui,sans-serif;
+  --r-lg:26px; --r-md:20px; --r-sm:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#22121B; --card:#2F1C27; --ink:#F8ECD9; --muted:#C9AFB8; --line:#4A3140; --soft:#2A1821; --outline:#3E2633;
+  --blue:#7F9BD6; --blue-soft:#26304A; --blue-text:#BFD0F4;
+  --pink:#C98DB8; --pink-soft:#3C2234; --pink-text:#F2C4E3;
+  --orange:#E0662A; --orange-soft:#3D2418; --orange-text:#F7A275; --spark:#F7894A;
+  --rose:#EE9CC9; --rose-soft:#3C2234; --rose-line:#8A4D72;
+  --sage:#A9BEF0; --sage-soft:#26304A; --amber:#EDB45A; --amber-soft:#3A2A16;
+  --ok:#74C997; --ok-soft:#1C3125; --bad:#F08A93; --bad-soft:#3E1F25;
+  --lip:#D38DA5; --mouth:#2A0F19; --tongue:#C9637F; --tooth:#F6EDE2; --shadow:0 4px 0 rgba(0,0,0,.25);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#22121B; --card:#2F1C27; --ink:#F8ECD9; --muted:#C9AFB8; --line:#4A3140; --soft:#2A1821; --outline:#3E2633;
+  --blue:#7F9BD6; --blue-soft:#26304A; --blue-text:#BFD0F4;
+  --pink:#C98DB8; --pink-soft:#3C2234; --pink-text:#F2C4E3;
+  --orange:#E0662A; --orange-soft:#3D2418; --orange-text:#F7A275; --spark:#F7894A;
+  --rose:#EE9CC9; --rose-soft:#3C2234; --rose-line:#8A4D72;
+  --sage:#A9BEF0; --sage-soft:#26304A; --amber:#EDB45A; --amber-soft:#3A2A16;
+  --ok:#74C997; --ok-soft:#1C3125; --bad:#F08A93; --bad-soft:#3E1F25;
+  --lip:#D38DA5; --mouth:#2A0F19; --tongue:#C9637F; --tooth:#F6EDE2; --shadow:0 4px 0 rgba(0,0,0,.25);
+  color-scheme:dark}
+body[data-path="autism"]{--pa:var(--blue);--pa-soft:var(--blue-soft);--pa-line:var(--blue);--pa-ink:#3B1626;--pa-text:var(--blue-text)}
+body[data-path="ds"]{--pa:var(--pink);--pa-soft:var(--pink-soft);--pa-line:var(--pink);--pa-ink:#3B1626;--pa-text:var(--pink-text)}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body.quiet *{animation:none!important;transition:none!important}
+body.quiet .wavy{filter:saturate(.6)}
+.app{max-width:460px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px 120px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.005em;line-height:1.1}
+h1{font-size:32px;font-weight:800}
+h2{font-size:24px;font-weight:800}
+h3{font-size:18px;font-weight:700}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:13px;line-height:1.5}
+.eyebrow{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+svg.ast{color:var(--spark);width:22px;height:22px;stroke-width:2.6}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,label.btn:focus-within{outline:3px solid var(--spark);outline-offset:2px}
+.stack{display:flex;flex-direction:column;gap:16px}
+.row{display:flex;align-items:center;gap:10px}
+.between{justify-content:space-between}
+.wrap{flex-wrap:wrap}
+.grow{flex:1;min-width:0}
+
+/* wavy blob: scalloped edge drawn with a mask, like the brochure's blue shapes */
+.wavy{--s:24px;background:var(--blue);padding:calc(var(--s)*.85 + 6px);border-radius:0;
+  -webkit-mask:radial-gradient(closest-side,#000 96%,#0000) 0 0/var(--s) var(--s) round,linear-gradient(#000 0 0) 50%/calc(100% - var(--s)*.7) calc(100% - var(--s)*.7) no-repeat;
+          mask:radial-gradient(closest-side,#000 96%,#0000) 0 0/var(--s) var(--s) round,linear-gradient(#000 0 0) 50%/calc(100% - var(--s)*.7) calc(100% - var(--s)*.7) no-repeat}
+.wavy.pinkw{background:var(--pink)}
+
+/* header */
+.brand{padding:8px 2px 0}
+.brand .eyebrow{font-size:15px}
+.hdr{display:flex;align-items:center;gap:12px;padding:8px 0 2px}
+.hdr h2{flex:1;text-align:center}
+.cbtn{width:46px;height:46px;border-radius:50%;background:var(--card);display:grid;place-items:center;flex:none;border:2px solid var(--outline);box-shadow:var(--shadow)}
+.cbtn.ghost{visibility:hidden}
+
+/* cards, bubbles, tiles */
+.card{background:var(--card);border-radius:var(--r-lg);padding:18px;border:2px solid var(--outline);box-shadow:var(--shadow)}
+.tray{padding:28px 26px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{position:relative;background:var(--card);border-radius:var(--r-md);padding:14px 8px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;border:2.5px solid var(--outline);min-height:104px;box-shadow:var(--shadow);transition:transform .14s cubic-bezier(.3,1.6,.6,1),background .15s}
+.tile:active{transform:scale(.94) rotate(-1deg)}
+.tile .ico svg.i{width:34px;height:34px;stroke-width:1.5}
+.tile .lbl{font-size:14px;font-weight:500;line-height:1.25}
+.tile.pink{border-color:var(--pa-line)}
+.tile.on{background:var(--pa-soft);border-color:var(--pa);box-shadow:0 0 0 2px var(--pa) inset}
+.tile.big{min-height:136px}
+.tile.big .ico svg.i{width:44px;height:44px}
+.tile.big .lbl{font-family:var(--display);font-weight:700;font-size:18px}
+.hometile{min-height:116px;border-width:3px}
+.hometile .ico svg.i{width:36px;height:36px}
+.hometile .lbl{font-family:var(--display);font-weight:700;font-size:17px}
+.c-cream{background:#FBEEDB;color:#3B1626}
+.c-blue{background:#DCE6F8;color:#3B1626}
+.c-pink{background:#F4CDE8;color:#3B1626}
+.c-orange{background:#E8692A;color:#FFFFFF}
+/* speech-bubble tail */
+.bub::after{content:"";position:absolute;width:16px;height:16px;bottom:-10px;left:22px;background:inherit;border:solid var(--outline);border-width:0 3px 3px 0;transform:rotate(45deg) skew(12deg,12deg);border-radius:0 0 4px 0}
+.bub:nth-child(even)::after{left:auto;right:22px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:2px solid var(--outline);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:500;white-space:nowrap;box-shadow:var(--shadow)}
+.chip.on{background:var(--pink);color:#3B1626;border-color:var(--pink)}
+.chip svg.i{width:16px;height:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#3B1626;border-radius:999px;padding:15px 22px;font-family:var(--display);font-weight:700;font-size:18px;line-height:1.1;border:2.5px solid var(--outline);box-shadow:var(--shadow);transition:transform .12s}
+.btn:active{transform:translateY(2px)}
+.btn.pa{background:var(--pa);color:var(--pa-ink)}
+.btn.line{background:var(--card);color:var(--ink)}
+.btn.block{width:100%}
+.btn svg.i{width:20px;height:20px;stroke-width:2}
+.btn.sm{padding:10px 16px;font-size:15px}
+.btn:disabled{opacity:.6}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600}
+.pill svg.i{width:14px;height:14px}
+.scroller{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none;margin-inline:-2px}
+.scroller::-webkit-scrollbar{display:none}
+.seg{display:flex;background:var(--card);border:2px solid var(--outline);border-radius:999px;padding:4px;gap:4px;box-shadow:var(--shadow)}
+.seg button{flex:1;padding:10px 6px;border-radius:999px;font-size:13px;font-weight:500;color:var(--muted)}
+.seg button.on{background:var(--pa);color:var(--pa-ink);font-weight:600}
+
+/* bottom nav */
+.nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));background:var(--card);border:2.5px solid var(--outline);border-radius:999px;padding:6px;display:flex;gap:4px;box-shadow:0 10px 28px rgba(59,22,38,.14);z-index:20}
+.nav button{display:flex;align-items:center;gap:6px;padding:11px 14px;border-radius:999px;color:var(--muted);font-size:14px;font-weight:600}
+.nav button span{display:none}
+.nav button.on{background:var(--orange);color:#fff}
+.nav button.on span{display:inline}
+
+/* home */
+.hello{display:flex;align-items:flex-start;gap:12px;padding:6px 2px 4px}
+.hello h1{font-size:34px}
+.hello h1 em{display:block;font-style:normal;font-family:var(--body);font-weight:400;font-size:17px;color:var(--muted);margin-top:6px;letter-spacing:0}
+.avatar{width:54px;height:54px;border-radius:50%;background:var(--pink);color:#3B1626;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;border:3px solid var(--outline);box-shadow:var(--shadow);flex:none}
+
+/* sentence strip */
+.strip{display:flex;flex-wrap:wrap;gap:6px;min-height:46px;align-items:center}
+.strip .w{display:inline-flex;align-items:center;gap:6px;background:var(--pa-soft);color:var(--ink);border-radius:14px;padding:8px 11px;font-weight:500}
+.strip .w svg.i{width:18px;height:18px}
+.strip .ph{color:var(--muted);font-size:14px}
+.slot{border:2px dashed var(--line);border-radius:18px;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:86px;text-align:center}
+.slot.fill{border-style:solid;border-color:var(--pa);background:var(--pa-soft)}
+.slot svg.i{width:30px;height:30px}
+
+/* toast + big show */
+.toast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top,0px));transform:translate(-50%,-160%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:20px;font-weight:500;max-width:min(420px,calc(100% - 32px));z-index:40;transition:transform .3s cubic-bezier(.3,1.4,.6,1);display:flex;gap:10px;align-items:center}
+.toast.show{transform:translate(-50%,0)}
+.toast svg.i{width:20px;height:20px}
+.overlay{position:fixed;inset:0;background:var(--bg);z-index:50;display:flex;flex-direction:column;padding:calc(20px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));gap:16px}
+.overlay .bigtext{flex:1;display:grid;place-items:center;text-align:center;font-family:var(--display);font-size:clamp(32px,9vw,52px);font-weight:800;line-height:1.15;overflow:auto}
+
+/* mouth coach */
+.stage{border:2.5px solid var(--outline);border-radius:var(--r-lg);background:var(--card);padding:10px;position:relative;box-shadow:var(--shadow)}
+.mouthsvg{width:100%;height:auto;display:block;max-width:100%}
+.cue{font-family:var(--display);font-size:22px;font-weight:700;text-align:center;min-height:56px;display:grid;place-items:center;line-height:1.2}
+.sounds{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.sounds .s{min-width:42px;padding:8px 10px;border-radius:14px;background:var(--soft);border:2px solid var(--outline);font-family:var(--display);font-weight:700;font-size:17px;text-align:center}
+.sounds .s.on{background:var(--pa);border-color:var(--pa);color:var(--pa-ink)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.duo .pane{border-radius:var(--r-md);overflow:hidden;background:var(--soft);border:2px solid var(--outline);aspect-ratio:3/4;position:relative;max-width:100%;display:grid;place-items:center}
+.duo .pane video,.duo .pane img{width:100%;height:100%;object-fit:cover;transform:scaleX(-1)}
+.duo .pane .tag{position:absolute;left:8px;top:8px;background:var(--card);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;z-index:1}
+.check{display:flex;gap:12px;align-items:center;padding:10px 4px;border-bottom:1.5px dashed var(--line)}
+.check:last-child{border-bottom:0}
+.box{width:26px;height:26px;border-radius:9px;border:2px solid var(--line);display:grid;place-items:center;flex:none;background:var(--card)}
+.box svg.i{width:16px;height:16px;opacity:0}
+.check.on .box{background:var(--ok);border-color:var(--ok);color:#fff}
+.check.on .box svg.i{opacity:1}
+
+/* brain */
+.brainwrap{position:relative;overflow:hidden;touch-action:none;max-width:100%;padding:14px}
+#brainCanvas{display:block;width:100%;height:340px;cursor:grab}
+#brainCanvas:active{cursor:grabbing}
+.brainbar{position:absolute;right:24px;top:24px;display:flex;flex-direction:column;gap:8px}
+.brainbar .cbtn{width:42px;height:42px}
+.brainbar .cbtn.on{background:var(--orange);color:#fff}
+.brainhint{position:absolute;left:24px;bottom:22px;font-size:12px;color:#3B1626;background:#FBEEDB;border-radius:999px;padding:4px 10px;border:2px solid #fff}
+.caption{position:absolute;left:24px;right:76px;top:24px;background:#FBEEDB;color:#3B1626;border:2.5px solid #fff;border-radius:18px;padding:10px 12px;font-family:var(--display);font-weight:700;font-size:15px;line-height:1.3}
+.region{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:var(--r-md);background:var(--card);border:2px solid var(--outline);text-align:left;width:100%;box-shadow:var(--shadow)}
+.region.on{border-color:var(--orange);box-shadow:0 0 0 1.5px var(--orange) inset}
+.dot{width:14px;height:14px;border-radius:50%;flex:none}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+
+/* learn */
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:6px;text-align:center}
+.flow .st{background:var(--soft);border:2px solid var(--outline);border-radius:18px;padding:12px 6px;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px;font-weight:600;min-width:0}
+.flow .st.broke{background:var(--pink-soft);border-color:var(--pink)}
+.flow .arr{color:var(--spark);font-weight:700}
+.li{display:flex;gap:12px;align-items:flex-start}
+.li .ico{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;flex:none;background:var(--blue-soft);border:0;color:var(--blue-text)}
+.li .ico svg.i{width:20px;height:20px}
+.lesson{display:flex;gap:14px;align-items:center;padding:14px;border-radius:var(--r-md);background:var(--card);border:2px solid var(--outline);width:100%;text-align:left;box-shadow:var(--shadow)}
+.lesson .n{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue-text);flex:none}
+.lesson.done .n{background:var(--ok-soft);color:var(--ok)}
+.opt{display:flex;gap:12px;align-items:center;width:100%;text-align:left;padding:14px;border-radius:20px;background:var(--card);border:2px solid var(--outline);font-size:15px;box-shadow:var(--shadow)}
+.opt .k{width:30px;height:30px;border-radius:50%;background:var(--blue-soft);color:var(--blue-text);display:grid;place-items:center;font-weight:700;font-size:13px;flex:none}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.right .k{background:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .k{background:var(--bad);color:#fff}
+.bar{height:10px;border-radius:10px;background:var(--card);overflow:hidden;border:1.5px solid var(--line)}
+.bar i{display:block;height:100%;background:var(--orange);border-radius:10px;transition:width .4s}
+details.acc{background:var(--card);border:2px solid var(--outline);border-radius:var(--r-md);padding:4px 16px;box-shadow:var(--shadow)}
+details.acc summary{list-style:none;cursor:pointer;padding:12px 0;font-family:var(--display);font-weight:700;font-size:17px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary svg.i{color:var(--spark);transition:transform .2s}
+details.acc[open] summary svg.i{transform:rotate(90deg)}
+details.acc .in{padding:0 0 14px;display:flex;flex-direction:column;gap:12px}
+.sched{display:flex;gap:12px;align-items:center;width:100%;padding:12px;border-radius:var(--r-md);background:var(--card);border:2px solid var(--outline);text-align:left;box-shadow:var(--shadow)}
+.sched.now{border-color:var(--pa);box-shadow:0 0 0 1.5px var(--pa) inset}
+.sched.done{opacity:.55}
+.sched .t{width:46px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.star{color:var(--spark)}
+.pop{animation:pop .5s}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.18) rotate(-2deg)}100%{transform:scale(1)}}
+input[type=text],input[type=tel],textarea,select{width:100%;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 14px}
+textarea{resize:vertical;min-height:110px;font-family:var(--display);font-size:22px;font-weight:600}
+input[type=range]{width:100%;accent-color:var(--orange)}
+label.f{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:360px){.grid3{grid-template-columns:repeat(2,1fr)}.tray{padding:24px 20px}}
+
+/* Arabic / right-to-left */
+body{direction:rtl;line-height:1.75}
+h1,h2,h3,.eyebrow,.hello h1 em{letter-spacing:0}
+h1,h2,h3{line-height:1.35}
+h1{font-size:30px}.hello h1{font-size:32px}
+.region,.lesson,.opt,.sched,.check{text-align:start}
+details.acc[open] summary svg.i{transform:rotate(-90deg)}
+.cue{line-height:1.45}
+.btn{line-height:1.3;padding-top:13px;padding-bottom:13px}
+.bub::after{left:auto;right:22px}
+.bub:nth-child(even)::after{right:auto;left:22px}
+.sounds .s{font-size:20px;min-width:46px}
+textarea{line-height:1.5}
+.toast,.caption{line-height:1.5}
+</style>
+</head>
+<body>
+
+
+<div class="app" dir="rtl">
+
+<!-- HOME -->
+<section class="scr stack" id="s-home">
+  <div class="brand row between"><span class="eyebrow">جسر الكلام</span><svg class="i ast" data-i="ast"></svg></div>
+  <div class="hello">
+    <h1 class="grow"><span id="helloName">أهلاً ملك!</span><em>ماذا تريد أن تقول اليوم؟</em></h1>
+    <button class="avatar" data-go="me" id="avatar" aria-label="ملفي الشخصي">م</button>
+  </div>
+  <div class="seg" id="pathSeg" role="tablist" aria-label="اختر المسار">
+    <button data-path="apraxia">أبراكسيا الكلام</button>
+    <button data-path="autism">التوحد</button>
+    <button data-path="ds">متلازمة داون</button>
+  </div>
+  <p class="small muted" id="pathNote"></p>
+  <div class="tray wavy">
+    <div class="grid2" id="homeGrid"></div>
+  </div>
+  <button class="lesson" data-go="learn">
+    <div class="n" style="background:var(--pa-soft);color:var(--pa-text)"><svg class="i" data-i="learn"></svg></div>
+    <div class="grow"><div class="eyebrow">مسار التعلّم</div><h3>افهم أبراكسيا الكلام</h3><p class="small muted" id="learnProg">أنهيت 0 من 5 دروس</p></div>
+    <svg class="i" data-i="next"></svg>
+  </button>
+</section>
+
+<!-- TALK -->
+<section class="scr stack" id="s-talk" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2 id="talkTitle">لوحة الكلام</h2><button class="cbtn" data-go="text" aria-label="اكتب ليُقرأ بصوت"><svg class="i" data-i="keyboard"></svg></button></div>
+
+  <div id="talk-apraxia" class="stack">
+    <div class="card stack" style="gap:12px">
+      <div class="row"><div class="strip grow" id="apxStrip"></div><button class="cbtn" id="apxDel" aria-label="احذف آخر كلمة"><svg class="i" data-i="delete"></svg></button></div>
+      <button class="btn pa block" id="apxSpeak"><svg class="i" data-i="volume"></svg>انطق جملتي</button>
+    </div>
+    <div class="scroller" id="apxTabs"></div>
+    <div class="grid3" id="apxGrid"></div>
+  </div>
+
+  <div id="talk-autism" class="stack" hidden>
+    <div class="row between"><span class="eyebrow">أريد…</span><button class="chip" id="quietBtn"><svg class="i" data-i="headphones"></svg><span>الوضع الهادئ</span></button></div>
+    <div class="card row" style="gap:10px">
+      <div class="slot fill" style="min-width:86px"><svg class="i" data-i="user"></svg><b>أريد</b></div>
+      <div class="slot grow" id="autSlot"><span style="font-size:22px">+</span><span class="small muted">اختر صورة</span></div>
+      <button class="cbtn" id="autSpeak" style="width:56px;height:56px;background:var(--pa);color:var(--pa-ink);border:0" aria-label="انطق"><svg class="i" data-i="volume"></svg></button>
+    </div>
+    <div class="grid3" id="autGrid"></div>
+    <div class="card stack" style="gap:10px">
+      <div class="row between"><h3>أولاً، ثم</h3><span class="small muted">اضغط على البطاقة لتغييرها</span></div>
+      <div class="row" style="gap:8px">
+        <button class="slot fill grow" id="ftFirst"></button>
+        <svg class="i" data-i="next"></svg>
+        <button class="slot fill grow" id="ftThen"></button>
+      </div>
+      <button class="btn line block" id="ftSpeak"><svg class="i" data-i="volume"></svg>قلها</button>
+    </div>
+    <button class="btn line block" id="breakBtn" style="border-color:var(--sage);border-width:2px"><svg class="i" data-i="breathe"></svg>أحتاج إلى استراحة</button>
+  </div>
+
+  <div id="talk-ds" class="stack" hidden>
+    <div class="row between"><span class="eyebrow">كوّن جملة · اضغط على المكعب لتغييره</span><span class="pill" style="background:var(--amber-soft);color:var(--amber)" id="dsStars"><svg class="i" data-i="star"></svg><b>0</b></span></div>
+    <div class="card stack" style="gap:12px">
+      <div class="row" style="gap:6px" id="dsBuilder"></div>
+      <button class="btn pa block" id="dsSay" style="font-size:20px;padding:18px"><svg class="i" data-i="volume"></svg>قلها!</button>
+    </div>
+    <div class="grid2" id="dsGrid"></div>
+  </div>
+</section>
+
+<!-- TEXT -->
+<section class="scr stack" id="s-text" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>من نص إلى كلام</h2><span class="cbtn ghost"></span></div>
+  <div class="card stack" style="gap:12px">
+    <textarea id="txt" aria-label="اكتب ما تريد أن تقوله" placeholder="اكتب هنا…" dir="auto">أحبك</textarea>
+    <div class="row wrap" style="gap:8px" id="quick"></div>
+  </div>
+  <button class="btn pa block" id="txtSpeak"><svg class="i" data-i="volume"></svg>انطق</button>
+  <div class="grid2">
+    <button class="btn line" id="txtShow"><svg class="i" data-i="eye"></svg>اعرض بخط كبير</button>
+    <button class="btn line" id="txtSave"><svg class="i" data-i="plus"></svg>احفظ العبارة</button>
+  </div>
+</section>
+
+<!-- PHRASES -->
+<section class="scr stack" id="s-phrases" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>عبارات</h2><button class="cbtn" data-go="text" aria-label="أضف عبارة"><svg class="i" data-i="plus"></svg></button></div>
+  <div class="tray wavy pinkw"><div class="grid2" id="phraseGrid"></div></div>
+  <p class="small muted" style="text-align:center">اضغط على العبارة لتُقال بصوت عالٍ.</p>
+</section>
+
+<!-- EMERGENCY -->
+<section class="scr stack" id="s-emergency" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>طوارئ</h2><span class="cbtn ghost"></span></div>
+  <div class="card stack" style="border:2px solid var(--rose);gap:12px">
+    <div class="row"><div class="cbtn" style="background:var(--rose-soft);color:var(--rose);border:0"><svg class="i" data-i="siren"></svg></div><h3 class="grow">اعرض هذا على شخص قريب منك</h3></div>
+    <p style="font-size:19px;font-weight:500;line-height:1.7" id="emText"></p>
+    <div class="grid2"><button class="btn pa" id="emSpeak"><svg class="i" data-i="volume"></svg>قلها</button><button class="btn line" id="emShow"><svg class="i" data-i="eye"></svg>ملء الشاشة</button></div>
+  </div>
+  <div class="card stack" style="gap:8px">
+    <span class="eyebrow">جهة الاتصال للطوارئ</span>
+    <div class="row"><div class="cbtn"><svg class="i" data-i="phone"></svg></div><div class="grow"><b id="emName">لم تُضف بعد</b><p class="small muted" id="emNum" style="user-select:all" dir="auto">أضف جهة اتصال من صفحتك</p></div><button class="btn sm line" id="emCopy">نسخ</button></div>
+  </div>
+  <div class="grid2" id="emQuick"></div>
+</section>
+
+<!-- MY DAY -->
+<section class="scr stack" id="s-day" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>يومي</h2><span class="pill" style="background:var(--pa-soft);color:var(--pa-text)" id="dayName"><svg class="i" data-i="calendar"></svg>اليوم</span></div>
+  <p class="small muted">اضغط على الخطوة عندما تنتهي منها. ستضيء الخطوة التالية.</p>
+  <div class="stack" style="gap:8px" id="schedList"></div>
+  <h3>بماذا أشعر؟</h3>
+  <div class="grid3" id="feelGrid"></div>
+</section>
+
+<!-- LEARN HUB -->
+<section class="scr stack" id="s-learn" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>تعلّم</h2><span class="cbtn ghost"></span></div>
+  <div class="card stack" style="gap:10px;background:var(--pink);color:#3B1626">
+    <span class="eyebrow" style="color:inherit">تقدّمك</span>
+    <h2 id="hubTitle">ابدأ بالدرس الأول</h2>
+    <div class="bar"><i id="hubBar" style="width:0%"></i></div>
+  </div>
+  <div class="stack" style="gap:10px" id="lessonList"></div>
+</section>
+
+<!-- WHAT IS IT -->
+<section class="scr stack" id="s-what" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>ما هي؟</h2><span class="cbtn ghost"></span></div>
+  <div class="card stack" style="gap:10px">
+    <span class="pill" style="background:var(--pink-soft);color:var(--pink-text);align-self:flex-start"><svg class="i" data-i="book"></svg>الدرس 1 · 5 دقائق</span>
+    <div class="row" style="align-items:flex-start"><h1 class="grow">ما هي أبراكسيا الكلام؟</h1><svg class="i ast" data-i="ast"></svg></div>
+    <p id="whatLead" style="font-size:16px">يعرف الدماغ ما يريد قوله، لكنه يجد صعوبة في تخطيط حركات الشفتين واللسان والفك وترتيبها لقوله. العضلات ليست ضعيفة، لكن الرسالة التي تصل إليها تختلط.</p>
+    <button class="btn line sm" style="align-self:flex-start" id="whatListen"><svg class="i" data-i="volume"></svg>استمع</button>
+  </div>
+  <div class="card stack" style="gap:12px">
+    <h3>الكلام يحدث في ثلاث خطوات</h3>
+    <div class="flow">
+      <div class="st"><svg class="i" data-i="idea"></svg>الفكرة<span class="small muted">«أريد ماء»</span></div><span class="arr">←</span>
+      <div class="st broke"><svg class="i" data-i="brain"></svg>الخطة<span class="small" style="color:var(--pink-text)">هنا تكون الأبراكسيا</span></div><span class="arr">←</span>
+      <div class="st"><svg class="i" data-i="mouth"></svg>الحركة<span class="small muted">الشفتان واللسان والفك</span></div>
+    </div>
+    <p class="small muted">الفكرة سليمة والعضلات سليمة. المشكلة في الخطوة الوسطى، أي تحويل الكلمات إلى خطة حركة.</p>
+  </div>
+  <details class="acc" open><summary>نوعان من الأبراكسيا<svg class="i" data-i="next"></svg></summary><div class="in">
+    <div class="li"><div class="ico"><svg class="i" data-i="user"></svg></div><div><b>أبراكسيا الكلام الطفولية</b><p class="small muted">تظهر منذ الطفولة المبكرة. يتطور الكلام ببطء ويكون صعب الفهم. صور الدماغ تبدو طبيعية عادةً.</p></div></div>
+    <div class="li"><div class="ico"><svg class="i" data-i="brain"></svg></div><div><b>أبراكسيا الكلام المكتسبة</b><p class="small muted">تحدث لدى البالغين بعد جلطة دماغية أو إصابة في الرأس أو مرض، وغالباً في الجهة اليسرى من الدماغ. كثيراً ما تظهر مع الحُبسة (الأفازيا).</p></div></div>
+  </div></details>
+  <details class="acc"><summary>علامات قد تلاحظها · اضغط على ما رأيته<svg class="i" data-i="next"></svg></summary><div class="in" id="signList"></div></details>
+  <details class="acc"><summary>ما ليست هي<svg class="i" data-i="next"></svg></summary><div class="in">
+    <div class="li"><div class="ico"><svg class="i" data-i="close"></svg></div><div><b>ليست ضعفاً في العضلات</b><p class="small muted">ضعف عضلات الكلام أو صعوبة التحكم بها حالة مختلفة اسمها عُسر التلفظ (الديسارثريا).</p></div></div>
+    <div class="li"><div class="ico"><svg class="i" data-i="close"></svg></div><div><b>ليست مشكلة في السمع أو التفكير</b><p class="small muted">معظم المصابين بالأبراكسيا يفهمون أكثر بكثير مما يستطيعون قوله.</p></div></div>
+    <div class="li"><div class="ico"><svg class="i" data-i="close"></svg></div><div><b>ليست كسلاً</b><p class="small muted">بذل جهد أكبر لا يصلح الخطة. التدريب والدعم المناسب هما ما يساعد.</p></div></div>
+  </div></details>
+  <details class="acc"><summary>ما الذي يساعد<svg class="i" data-i="next"></svg></summary><div class="in">
+    <div class="li"><div class="ico"><svg class="i" data-i="repeat"></svg></div><div><b>تدريب قصير ومتكرر</b><p class="small muted">تكرار كلمات حقيقية مرات كثيرة، عدة مرات في الأسبوع، مع أخصائي النطق واللغة. من الطرق المستخدمة DTTC وPROMPT وReST.</p></div></div>
+    <div class="li"><div class="ico"><svg class="i" data-i="eye"></svg></div><div><b>شاهد، استمع، ثم قلها معاً</b><p class="small muted">رؤية حركة الفم واللمسات الإرشادية تساعد الدماغ على بناء الخطة. جرّبها في مدرب الفم.</p></div></div>
+    <div class="li"><div class="ico"><svg class="i" data-i="chat"></svg></div><div><b>الكلام بالصور (التواصل البديل) من الآن</b><p class="small muted">لوحات الكلام تتيح التواصل اليوم. تشير الأبحاث إلى أن التواصل البديل يدعم الكلام المنطوق ولا يوقفه.</p></div></div>
+  </div></details>
+  <div class="grid2"><button class="btn line" data-go="brain"><svg class="i" data-i="cube"></svg>الدماغ ثلاثي الأبعاد</button><button class="btn" id="whatDone"><svg class="i" data-i="check"></svg>انتهيت</button></div>
+</section>
+
+<!-- BRAIN -->
+<section class="scr stack" id="s-brain" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>الدماغ ثلاثي الأبعاد</h2><span class="cbtn ghost"></span></div>
+  <div class="brainwrap wavy">
+    <canvas id="brainCanvas" aria-label="دماغ تفاعلي ثلاثي الأبعاد. اسحب لتدويره واضغط على منطقة ملوّنة."></canvas>
+    <div class="brainbar">
+      <button class="cbtn" id="bXray" aria-label="عرض الأشعة: إظهار المناطق العميقة" title="أشعة"><svg class="i" data-i="eye"></svg></button>
+      <button class="cbtn on" id="bSpin" aria-label="تدوير تلقائي" title="تدوير تلقائي"><svg class="i" data-i="repeat"></svg></button>
+      <button class="cbtn" id="bReset" aria-label="إعادة الوضع" title="إعادة"><svg class="i" data-i="home"></svg></button>
+    </div>
+    <div class="caption" id="bCaption" hidden></div>
+    <div class="brainhint" id="bHint">اسحب للتدوير · قرّب بإصبعين · اضغط على لون</div>
+  </div>
+  <div class="legend"><span><i class="dot" style="background:#E9772F"></i>تخطيط الكلام</span><span><i class="dot" style="background:#F2BE45"></i>مرتبط بالتخطيط</span><span><i class="dot" style="background:#6F8FD8"></i>التوقيت</span><span><i class="dot" style="background:#4FA88A"></i>يعمل جيداً عادةً</span></div>
+  <button class="btn pa block" id="bPath"><svg class="i" data-i="play"></svg>شغّل مسار الكلام</button>
+  <div class="card stack" style="gap:8px" id="bDetail"></div>
+  <div class="stack" style="gap:8px" id="bRegions"></div>
+  <div class="card small muted">لدى الأطفال المصابين بأبراكسيا الكلام الطفولية تبدو صور الدماغ طبيعية عادةً. يعتقد الباحثون أن الشبكات التي تخطط للكلام تتطور بشكل مختلف، وأحياناً يرتبط ذلك بجينات مثل FOXP2. توضح المناطق الملوّنة أين يحدث التخطيط، وأين يسبب الضرر الأبراكسيا غالباً لدى البالغين.</div>
+</section>
+
+<!-- MOUTH COACH -->
+<section class="scr stack" id="s-mouth" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>مدرب الفم</h2><span class="pill" style="background:var(--amber-soft);color:var(--amber)" id="mStars"><svg class="i" data-i="star"></svg><b>0</b></span></div>
+  <div class="scroller" id="wordChips"></div>
+  <div class="stage stack" style="gap:6px">
+    <svg class="mouthsvg" id="mouth" viewBox="0 0 320 230" role="img" aria-label="فم متحرك يوضح كيفية نطق كل صوت"></svg>
+    <div class="sounds" id="mSounds"></div>
+    <div class="cue" id="mCue">اضغط تشغيل لتشاهد الفم</div>
+  </div>
+  <div class="row" style="gap:8px">
+    <button class="cbtn" id="mPrev" aria-label="الصوت السابق"><svg class="i" data-i="back"></svg></button>
+    <button class="btn grow" id="mPlay"><svg class="i" data-i="play"></svg><span>تشغيل</span></button>
+    <button class="cbtn" id="mNext" aria-label="الصوت التالي"><svg class="i" data-i="next"></svg></button>
+    <button class="cbtn" id="mHear" aria-label="استمع إلى الكلمة"><svg class="i" data-i="volume"></svg></button>
+  </div>
+  <div class="seg" id="mSpeed"><button data-s="0.45">بطيء جداً</button><button data-s="0.7" class="on">بطيء</button><button data-s="1">عادي</button></div>
+  <div class="card li" id="mTouch"></div>
+  <div class="card stack" style="gap:12px">
+    <div class="row between"><h3>قلّد الحركة</h3><span class="small muted">شاهد، ثم قلّد</span></div>
+    <div class="duo">
+      <div class="pane"><span class="tag">النموذج</span><svg class="mouthsvg" id="mouth2" viewBox="0 0 320 230" aria-hidden="true"></svg></div>
+      <div class="pane" id="youPane"><span class="tag">أنت</span><div class="stack" style="align-items:center;gap:6px;padding:10px;text-align:center"><svg class="i" data-i="video" style="width:32px;height:32px"></svg><span class="small muted">صوّر نفسك وأنت تقول الكلمة</span></div></div>
+    </div>
+    <div class="grid2">
+      <button class="btn line sm" id="liveBtn"><svg class="i" data-i="eye"></svg>مرآة مباشرة</button>
+      <label class="btn line sm" for="selfie" style="cursor:pointer"><svg class="i" data-i="video"></svg>سجّل نفسي</label>
+    </div>
+    <button class="btn pa sm block" id="together"><svg class="i" data-i="play"></svg>شغّل معاً</button>
+    <input type="file" id="selfie" accept="video/*,image/*" capture="user" hidden>
+    <p class="small muted" id="mirrorNote">شغّل المرآة المباشرة لترى فمك بجانب النموذج أثناء التشغيل، أو سجّل مقطعاً قصيراً. الفيديو لا يغادر جهازك.</p>
+    <div><span class="eyebrow">تحقق من نفسك</span><div id="mChecks"></div></div>
+    <button class="btn pa block" id="mDid"><svg class="i" data-i="star"></svg>فعلتها!</button>
+  </div>
+  <div class="card stack" style="gap:10px">
+    <h3>أصوات منفردة</h3>
+    <div class="row wrap" style="gap:8px" id="soundLib"></div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section class="scr stack" id="s-guide" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>علّم الآخرين</h2><span class="cbtn ghost"></span></div>
+  <p class="muted">كيف تتحدث مع شخص يتواصل بطريقة مختلفة. شارك هذا مع العائلة والمعلمين والأصدقاء.</p>
+  <div class="seg" id="gSeg"><button data-g="apraxia" class="on">الأبراكسيا</button><button data-g="autism">التوحد</button><button data-g="ds">متلازمة داون</button></div>
+  <div class="stack" style="gap:10px" id="gBody"></div>
+  <div class="card stack" style="gap:12px;background:var(--pa-soft)">
+    <span class="eyebrow">تدرّب على موقف</span>
+    <h3 id="scQ"></h3>
+    <div class="stack" style="gap:8px" id="scOpts"></div>
+    <p class="small" id="scFb"></p>
+    <button class="btn line sm" id="scNext" style="align-self:flex-end">الموقف التالي <svg class="i" data-i="next"></svg></button>
+  </div>
+  <button class="btn block" id="guideDone"><svg class="i" data-i="check"></svg>أنهيت الدرس</button>
+</section>
+
+<!-- QUIZ -->
+<section class="scr stack" id="s-quiz" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>اختبار سريع</h2><span class="pill" style="background:var(--pa-soft);color:var(--pa-text)" id="qCount">1 / 6</span></div>
+  <div class="bar"><i id="qBar" style="width:0%"></i></div>
+  <div id="qBody" class="stack" style="gap:12px"></div>
+</section>
+
+<!-- ME -->
+<section class="scr stack" id="s-me" hidden>
+  <div class="hdr"><button class="cbtn" data-back aria-label="رجوع"><svg class="i" data-i="back"></svg></button><h2>أنا</h2><span class="cbtn ghost"></span></div>
+  <div class="card stack">
+    <label class="f" for="meName">اسمي<input type="text" id="meName" autocomplete="given-name" dir="auto"></label>
+    <label class="f" for="mePath">مساري<select id="mePath"><option value="apraxia">أبراكسيا الكلام</option><option value="autism">التوحد</option><option value="ds">متلازمة داون</option></select></label>
+    <label class="f" for="meRate">سرعة الصوت · <span id="meRateV"></span><input type="range" id="meRate" min="0.5" max="1.3" step="0.1"></label>
+    <button class="btn line sm" id="meTest" style="align-self:flex-start"><svg class="i" data-i="volume"></svg>جرّب الصوت</button>
+    <p class="small muted" id="voiceNote"></p>
+  </div>
+  <div class="card stack">
+    <span class="eyebrow">جهة الاتصال للطوارئ</span>
+    <label class="f" for="cName">الاسم<input type="text" id="cName" placeholder="مثلاً: ماما" dir="auto"></label>
+    <label class="f" for="cNum">رقم الهاتف<input type="tel" id="cNum" placeholder="+20 …" dir="ltr"></label>
+  </div>
+  <div class="card row between"><div><b>النجوم التي جمعتها</b><p class="small muted">من التدريب والكلام</p></div><span class="pill" style="background:var(--amber-soft);color:var(--amber);font-size:16px" id="meStars"><svg class="i" data-i="star"></svg><b>0</b></span></div>
+  <button class="btn line block" id="meReset"><svg class="i" data-i="trash"></svg>إعادة ضبط التقدم</button>
+  <p class="small muted" id="meResetNote" hidden>اضغط مرة أخرى للتأكيد. سيُمسح النجوم والدروس والجدول والعبارات المحفوظة على هذا الجهاز.</p>
+</section>
+
+</div>
+
+<nav class="nav" aria-label="القائمة الرئيسية" dir="rtl">
+  <button data-go="home"><svg class="i" data-i="home"></svg><span>الرئيسية</span></button>
+  <button data-go="talk"><svg class="i" data-i="chat"></svg><span>تكلّم</span></button>
+  <button data-go="learn"><svg class="i" data-i="learn"></svg><span>تعلّم</span></button>
+  <button data-go="me"><svg class="i" data-i="user"></svg><span>أنا</span></button>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite" dir="rtl"></div>
+<div class="overlay" id="big" hidden dir="rtl"><div class="row between"><span class="eyebrow">اعرض هذه الشاشة</span><button class="cbtn" id="bigClose" aria-label="إغلاق"><svg class="i" data-i="close"></svg></button></div><div class="bigtext" id="bigText" dir="auto"></div><button class="btn pa block" id="bigSpeak"><svg class="i" data-i="volume"></svg>قلها</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+"use strict";
+document.documentElement.lang='ar';document.documentElement.dir='rtl';
+/* ---------- icons (back/next point the RTL way) ---------- */
+const IC={
+volume:'<path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>',
+home:'<path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/>',
+book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/>',
+heart:'<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/>',
+smile:'<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/>',
+sad:'<circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M9 9h.01M15 9h.01"/>',
+angry:'<circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M7.5 8 10 9M14 9l2.5-1"/>',
+scared:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="16" r="2"/><path d="M9 9h.01M15 9h.01"/>',
+calm:'<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M7.5 10q1.5-1 3 0M13.5 10q1.5-1 3 0"/>',
+drink:'<path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/>',
+eat:'<path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06z"/><path d="M10 2c1 .5 2 2 2 5"/>',
+sleep:'<path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/>',
+help:'<path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>',
+point:'<path d="M22 14a8 8 0 0 1-8 8h-2a6 6 0 0 1-6-6v-2"/><path d="M6 12V4a2 2 0 0 1 4 0v8"/><path d="M10 10a2 2 0 0 1 4 0v2M14 11a2 2 0 0 1 4 0v1M18 12a2 2 0 0 1 4 0v2"/>',
+toilet:'<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>',
+play:'<polygon points="6 3 20 12 6 21 6 3"/>',
+pause:'<path d="M6 4h4v16H6zM14 4h4v16h-4z"/>',
+check:'<path d="M20 6 9 17l-5-5"/>',
+close:'<path d="M18 6 6 18M6 6l12 12"/>',
+back:'<path d="m9 18 6-6-6-6"/>',
+next:'<path d="m15 18-6-6 6-6"/>',
+star:'<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+calendar:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>',
+chat:'<path d="M3 15a2 2 0 0 0 2 2h12l4 4V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/>',
+people:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+learn:'<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+keyboard:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 13h.01M18 13h.01M8 16h8"/>',
+delete:'<path d="M4 5h11l7 7-7 7H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="m6 9 6 6M12 9l-6 6"/>',
+car:'<path d="M5 17h14v-5l-2-5H7l-2 5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/>',
+shirt:'<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>',
+headphones:'<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>',
+breathe:'<path d="M6.3 7.7a2.5 2.5 0 1 0-1.8 4.3H22"/><path d="M14.4 4.6A2 2 0 1 0 13 8h9"/><path d="M11.4 19.4A2 2 0 1 1 10 16h12"/>',
+idea:'<path d="M9 18h6M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>',
+eye:'<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+repeat:'<path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>',
+school:'<path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M18 5v17M6 5v17"/><path d="m4 6 8-4 8 4"/>',
+more:'<circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>',
+plus:'<path d="M12 5v14M5 12h14"/>',
+clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l-4 2"/>',
+brain:'<path d="M12 5a3 3 0 0 0-5.99.13 4 4 0 0 0-2.53 5.77 4 4 0 0 0 .55 6.98A4 4 0 0 0 12 18Z"/><path d="M12 5a3 3 0 0 1 5.99.13 4 4 0 0 1 2.53 5.77 4 4 0 0 1-.55 6.98A4 4 0 0 1 12 18Z"/><path d="M12 5v13"/>',
+mouth:'<path d="M3 12c3-3 6-4 9-2 3-2 6-1 9 2-3 4-6 6-9 6s-6-2-9-6z"/><path d="M3 12h18"/>',
+siren:'<path d="M7 18v-6a5 5 0 0 1 10 0v6"/><path d="M5 21h14v-3H5z"/><path d="M12 3v2M4.2 6.2l1.4 1.4M19.8 6.2l-1.4 1.4"/>',
+pen:'<path d="M12 20H3"/><path d="M7.5 3.5a2.1 2.1 0 0 0-3 3L17 19l4 1-1-4z"/>',
+phone:'<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>',
+cube:'<path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/>',
+video:'<path d="m22 8-6 4 6 4V8z"/><rect x="2" y="6" width="14" height="12" rx="2"/>',
+bandage:'<rect x="2" y="8" width="20" height="8" rx="4" transform="rotate(-45 12 12)"/><path d="M10 10h.01M14 14h.01M10 14h.01M14 10h.01"/>',
+music:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+ball:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>',
+tablet:'<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>',
+trash:'<path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/>',
+quiz:'<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/>',
+wave:'<path d="M18 11V6a2 2 0 0 0-4 0"/><path d="M14 10V4a2 2 0 0 0-4 0v2"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/><path d="M2 5c1-1.5 2-2 3.5-2M20 2.5c1 .5 1.7 1.3 2 2.5"/>',
+coin:'<circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.9 2.5 2-1 2-2.5 2c-1.1 0-2-.5-2.5-1.5M12 6v2M12 16v2"/>',
+ast:'<path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7"/>',
+x2:'<circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/>'
+};
+const ic=(n,cls='')=>`<svg class="i ${cls}" viewBox="0 0 24 24" aria-hidden="true">${IC[n]||IC.more}</svg>`;
+function hydrate(root=document){root.querySelectorAll('svg[data-i]').forEach(s=>{s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=IC[s.dataset.i]||'';s.removeAttribute('data-i');});}
+hydrate();
+
+/* ---------- state ---------- */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const store={get(k,d){try{const v=localStorage.getItem('sbar_'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('sbar_'+k,JSON.stringify(v))}catch(e){}}};
+const S={name:store.get('name','ملك'),path:store.get('path','apraxia'),rate:store.get('rate',0.9),stars:store.get('stars',0),done:store.get('done',{}),phrases:store.get('phrases',[]),sched:store.get('sched',{}),contact:store.get('contact',{name:'',num:''}),quiet:store.get('quiet',false),signs:store.get('signs',{})};
+const save=k=>store.set(k,S[k]);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num=n=>String(n);
+
+let toastT;
+function toast(msg,icon='volume'){const t=$('#toast');t.innerHTML=ic(icon)+'<span>'+esc(msg)+'</span>';t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2800);}
+/* Arabic voice */
+let arVoice=null,voiceWarned=false;
+function pickVoice(){try{const vs=speechSynthesis.getVoices();arVoice=vs.find(v=>/^ar[-_]EG/i.test(v.lang))||vs.find(v=>/^ar/i.test(v.lang))||null;
+  const n=$('#voiceNote');if(n)n.textContent=arVoice?('الصوت المستخدم: '+arVoice.name):(vs.length?'لا يوجد صوت عربي على هذا الجهاز. أضف اللغة العربية من إعدادات تحويل النص إلى كلام في جهازك.':'');}catch(e){}}
+if('speechSynthesis' in window){pickVoice();try{speechSynthesis.addEventListener('voiceschanged',pickVoice);}catch(e){}}
+function speak(text,opts={}){
+  if(!opts.silent) toast(text);
+  if(!('speechSynthesis' in window)){toast('لا يوجد صوت على هذا الجهاز. اعرض النص بدلاً من ذلك.','eye');return;}
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.rate=opts.rate||S.rate;
+    if(!arVoice)pickVoice();
+    if(arVoice){u.voice=arVoice;u.lang=arVoice.lang;}else{u.lang='ar-SA';if(!voiceWarned&&speechSynthesis.getVoices().length){voiceWarned=true;setTimeout(()=>toast('لا يوجد صوت عربي على هذا الجهاز. أضفه من إعدادات الجهاز.','volume'),1500);}}
+    if(opts.onend)u.onend=opts.onend;speechSynthesis.speak(u);}catch(e){}
+}
+function addStars(n,el){S.stars+=n;save('stars');renderStars();if(el){el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');}}
+function renderStars(){['#dsStars','#mStars','#meStars'].forEach(s=>{const b=$(s+' b');if(b)b.textContent=num(S.stars);});}
+function showBig(text){$('#bigText').textContent=text;$('#big').hidden=false;$('#bigSpeak').onclick=()=>speak(text,{silent:true});}
+$('#bigClose').onclick=()=>$('#big').hidden=true;
+
+/* ---------- routing ---------- */
+const hooks={};
+function go(n){if(location.hash==='#'+n)route();else location.hash=n;}
+function route(){
+  const n=location.hash.slice(1)||'home';const name=$('#s-'+n)?n:'home';
+  $$('.scr').forEach(s=>s.hidden=s.id!=='s-'+name);
+  const tab={home:'home',talk:'talk',text:'talk',phrases:'talk',emergency:'home',day:'talk',learn:'learn',what:'learn',brain:'learn',mouth:'learn',guide:'learn',quiz:'learn',me:'me'}[name];
+  $$('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.go===tab));
+  window.scrollTo(0,0);
+  if(name!=='brain')Brain.stop();
+  if(name!=='mouth')Coach.stop();
+  hooks[name]&&hooks[name]();
+}
+window.addEventListener('hashchange',route);
+document.addEventListener('click',e=>{
+  const g=e.target.closest('[data-go]');if(g){e.preventDefault();go(g.dataset.go);return;}
+  if(e.target.closest('[data-back]')){if(history.length>1)history.back();else go('home');}
+});
+
+/* ---------- path ---------- */
+const PATHS={
+  apraxia:{note:'مسار أبراكسيا الكلام: لوحة صوتية للتواصل الآن، وتدريب للفم على المدى الطويل.',talk:'لوحة الكلام'},
+  autism:{note:'مسار التوحد: ألوان هادئة، واختيارات بالصور يمكن توقعها، وروتين يومي، وأوقات للراحة.',talk:'الكلام بالصور'},
+  ds:{note:'مسار متلازمة داون: صور كبيرة، وجمل قصيرة، ونجوم مع كل محاولة.',talk:'الكلام السهل'}
+};
+function setPath(p){S.path=p;save('path');document.body.dataset.path=p;
+  $$('#pathSeg button').forEach(b=>b.classList.toggle('on',b.dataset.path===p));
+  $('#pathNote').textContent=PATHS[p].note;$('#talkTitle').textContent=PATHS[p].talk;$('#mePath').value=p;
+  ['apraxia','autism','ds'].forEach(k=>$('#talk-'+k).hidden=k!==p);
+  renderHome();}
+$$('#pathSeg button').forEach(b=>b.onclick=()=>setPath(b.dataset.path));
+
+/* ---------- home ---------- */
+function renderHome(){
+  $('#helloName').textContent='أهلاً '+(S.name||'بك')+'!';$('#avatar').textContent=(S.name||'?').trim().charAt(0)||'?';
+  const t=[['talk','chat',PATHS[S.path].talk],['emergency','siren','طوارئ'],['phrases','wave','عبارات'],['text','pen','اكتب'],['mouth','mouth','مدرب الفم'],['brain','brain','الدماغ ثلاثي الأبعاد'],['guide','people','علّم الآخرين'],['day','calendar','يومي']];
+  if(S.path==='autism'){t.splice(1,0,t.splice(7,1)[0]);}
+  $('#homeGrid').innerHTML=t.map(([g,i,l],k)=>`<button class="tile hometile bub ${['c-orange','c-blue','c-pink','c-cream','c-blue','c-orange','c-cream','c-pink'][k%8]}" data-go="${g}"><span class="ico">${ic(i)}</span><span class="lbl">${l}</span></button>`).join('');
+  const d=LESSONS.filter(l=>S.done[l.id]).length;$('#learnProg').textContent='أنهيت '+num(d)+' من '+num(LESSONS.length)+' دروس';
+}
+
+/* ---------- apraxia board ---------- */
+const APX={'أساسي':[['أنا','user'],['أريد','point'],['المزيد','plus'],['توقف','close'],['نعم','check'],['لا','x2'],['هيا','next'],['أحب','heart'],['ساعدني','help']],
+'احتياجات':[['ماء','drink'],['طعام','eat'],['الحمام','toilet'],['أنام','sleep'],['بالخارج','sun'],['يؤلمني','bandage'],['موسيقى','music'],['ألعب','ball'],['البيت','home']],
+'مشاعر':[['سعيد','smile'],['حزين','sad'],['غاضب','angry'],['متعب','sleep'],['خائف','scared'],['هادئ','calm']],
+'أشخاص':[['ماما','user'],['بابا','user'],['المعلّم','school'],['صديقي','people'],['الطبيب','bandage'],['أنت','point']]};
+let apxTab='أساسي',apxWords=[];
+function renderApx(){
+  $('#apxTabs').innerHTML=Object.keys(APX).map(k=>`<button class="chip ${k===apxTab?'on':''}" data-t="${k}">${k}</button>`).join('');
+  $('#apxGrid').innerHTML=APX[apxTab].map(([w,i])=>`<button class="tile" data-w="${esc(w)}" data-ic="${i}"><span class="ico">${ic(i)}</span><span class="lbl">${esc(w)}</span></button>`).join('');
+  $('#apxStrip').innerHTML=apxWords.length?apxWords.map(([w,i])=>`<span class="w">${ic(i)}${esc(w)}</span>`).join(''):'<span class="ph">اضغط على الصور لتكوين جملة</span>';
+}
+$('#apxTabs').onclick=e=>{const b=e.target.closest('[data-t]');if(b){apxTab=b.dataset.t;renderApx();}};
+$('#apxGrid').onclick=e=>{const b=e.target.closest('[data-w]');if(!b)return;apxWords.push([b.dataset.w,b.dataset.ic]);speak(b.dataset.w,{silent:true});renderApx();};
+$('#apxDel').onclick=()=>{apxWords.pop();renderApx();};
+$('#apxSpeak').onclick=()=>{if(!apxWords.length){toast('اضغط على بعض الصور أولاً','point');return;}speak(apxWords.map(w=>w[0]).join(' '));};
+
+/* ---------- autism board ---------- */
+const AUT=[['أن آكل','eat','آكل'],['أن أشرب','drink','أشرب'],['أن ألعب','ball','ألعب'],['الحمام','toilet','الحمام'],['أن أنام','sleep','أنام'],['المساعدة','help','مساعدة'],['موسيقى','music','موسيقى'],['التابلت','tablet','التابلت'],['أن أخرج','sun','الخارج']];
+const FT=[['الواجب','book'],['غسل الأسنان','toilet'],['العشاء','eat'],['اللعب','ball'],['التابلت','tablet'],['الخروج','sun'],['الاستحمام','toilet'],['قصة','book'],['ركوب السيارة','car']];
+let autPick=null,ftA=0,ftB=3;
+function renderAut(){
+  $('#autGrid').innerHTML=AUT.map(([w,i,l],k)=>`<button class="tile ${autPick===k?'on':''}" data-k="${k}"><span class="ico">${ic(i)}</span><span class="lbl">${esc(l)}</span></button>`).join('');
+  const s=$('#autSlot');
+  if(autPick==null){s.className='slot grow';s.innerHTML='<span style="font-size:22px">+</span><span class="small muted">اختر صورة</span>';}
+  else{s.className='slot fill grow';s.innerHTML=ic(AUT[autPick][1])+'<b>'+esc(AUT[autPick][0])+'</b>';}
+  const ft=(el,i,tag)=>{el.innerHTML=`<span class="eyebrow">${tag}</span>${ic(FT[i][1])}<b>${FT[i][0]}</b>`;};
+  ft($('#ftFirst'),ftA,'أولاً');ft($('#ftThen'),ftB,'ثم');
+  $('#quietBtn').classList.toggle('on',S.quiet);document.body.classList.toggle('quiet',S.quiet);
+}
+$('#autGrid').onclick=e=>{const b=e.target.closest('[data-k]');if(!b)return;autPick=+b.dataset.k;renderAut();};
+$('#autSpeak').onclick=()=>{if(autPick==null){toast('اختر صورة أولاً','point');return;}speak('أريد '+AUT[autPick][0]);};
+$('#ftFirst').onclick=()=>{ftA=(ftA+1)%FT.length;if(ftA===ftB)ftA=(ftA+1)%FT.length;renderAut();};
+$('#ftThen').onclick=()=>{ftB=(ftB+1)%FT.length;if(ftA===ftB)ftB=(ftB+1)%FT.length;renderAut();};
+$('#ftSpeak').onclick=()=>speak('أولاً '+FT[ftA][0]+'، ثم '+FT[ftB][0]+'.');
+$('#breakBtn').onclick=()=>{speak('أحتاج إلى استراحة، من فضلك.');};
+$('#quietBtn').onclick=()=>{S.quiet=!S.quiet;save('quiet');renderAut();toast(S.quiet?'الوضع الهادئ مفعّل: حركة أقل وألوان أهدأ':'تم إيقاف الوضع الهادئ','headphones');};
+
+/* ---------- Down syndrome board ---------- */
+const DSB=[[['أريد','help'],['أحب','heart'],['أرى','eye']],[['عصير','drink'],['كرة','ball'],['موسيقى','music'],['بسكويت','eat'],['ماما','user']],[['من فضلك','smile'],['الآن','clock'],['أيضاً','plus']]];
+let dsSel=[0,0,0];
+const DST=[['أنا جائع','eat','#FBEFD9'],['أنا عطشان','drink','#E3EEF8'],['ساعدني من فضلك','help','#F9E3E7'],['أريد الحمام','toilet','#E3F3E8'],['أنا سعيد','smile','#FBF3D0'],['احضنّي من فضلك','heart','#EDE6F8'],['أنا متعب','sleep','#E8E6F0'],['هيا نلعب!','ball','#E3F1EE']];
+function renderDs(){
+  $('#dsBuilder').innerHTML=DSB.map((opts,k)=>{const [w,i]=opts[dsSel[k]];return (k?'<b style="color:var(--spark)">+</b>':'')+`<button class="slot fill grow" data-k="${k}" style="min-height:96px">${ic(i)}<b style="font-size:17px">${esc(w)}</b></button>`;}).join('');
+  $('#dsGrid').innerHTML=DST.map(([w,i,c])=>`<button class="tile big" data-w="${esc(w)}"><span class="ico" style="background:${c};color:#3B1626;border-radius:18px;padding:10px;display:grid">${ic(i)}</span><span class="lbl">${esc(w)}</span></button>`).join('');
+  renderStars();
+}
+$('#dsBuilder').onclick=e=>{const b=e.target.closest('[data-k]');if(!b)return;const k=+b.dataset.k;dsSel[k]=(dsSel[k]+1)%DSB[k].length;renderDs();};
+$('#dsSay').onclick=()=>{speak(DSB.map((o,k)=>o[dsSel[k]][0]).join(' ')+'!');addStars(1,$('#dsStars'));};
+$('#dsGrid').onclick=e=>{const b=e.target.closest('[data-w]');if(!b)return;speak(b.dataset.w);b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');addStars(1,$('#dsStars'));};
+hooks.talk=()=>{renderApx();renderAut();renderDs();};
+
+/* ---------- text ---------- */
+const QUICK=['كيف حالك؟','شكراً','حسناً','أنا بخير','لا','نعم','انتظر من فضلك','هل يمكنك أن تعيد؟'];
+$('#quick').innerHTML=QUICK.map(q=>`<button class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join('');
+$('#quick').onclick=e=>{const b=e.target.closest('[data-q]');if(b){$('#txt').value=b.dataset.q;speak(b.dataset.q);}};
+const txtVal=()=>$('#txt').value.trim();
+$('#txtSpeak').onclick=()=>{txtVal()?speak(txtVal()):toast('اكتب شيئاً أولاً','pen');};
+$('#txtShow').onclick=()=>{txtVal()?showBig(txtVal()):toast('اكتب شيئاً أولاً','pen');};
+$('#txtSave').onclick=()=>{const v=txtVal();if(!v)return toast('اكتب شيئاً أولاً','pen');if(!S.phrases.includes(v)){S.phrases.unshift(v);save('phrases');}toast('حُفظت في العبارات','check');};
+
+/* ---------- phrases ---------- */
+const PHR=[['مرحباً','wave'],['لا أستطيع الكلام الآن','point'],['بكم هذا؟','coin'],['أحبك','heart'],['شكراً','smile'],['أين الحمام؟','toilet'],['أريد هذا','point'],['أنا جائع','eat'],['انتظر من فضلك، أنا أفكر','idea'],['هل يمكنك أن تكتبها؟','pen']];
+function renderPhrases(){
+  const mine=S.phrases.map(p=>`<div class="tile pink" style="position:relative"><button class="stack" style="align-items:center;gap:8px;width:100%" data-p="${esc(p)}"><span class="ico">${ic('pen')}</span><span class="lbl">${esc(p)}</span></button><button aria-label="احذف العبارة" data-rm="${esc(p)}" style="position:absolute;left:8px;top:8px;color:var(--muted)">${ic('close')}</button></div>`).join('');
+  $('#phraseGrid').innerHTML=mine+PHR.map(([p,i])=>`<button class="tile" data-p="${esc(p)}"><span class="ico">${ic(i)}</span><span class="lbl">${esc(p)}</span></button>`).join('');
+}
+$('#phraseGrid').onclick=e=>{const r=e.target.closest('[data-rm]');if(r){S.phrases=S.phrases.filter(p=>p!==r.dataset.rm);save('phrases');renderPhrases();return;}const b=e.target.closest('[data-p]');if(b)speak(b.dataset.p);};
+hooks.phrases=renderPhrases;
+
+/* ---------- emergency ---------- */
+const emMsg=()=>`اسمي ${S.name||'—'}. عندي صعوبة في النطق. أنا أفهمك، لكن من الصعب أن أقول الكلمات. أرجو أن تصبر عليّ. يمكنني أن أشير أو أكتب أو أستخدم هذا التطبيق.`;
+const EMQ=[['أحتاج مساعدة','help'],['اتصل بأهلي','phone'],['أنا مصاب','bandage'],['أنا تائه','home']];
+hooks.emergency=()=>{$('#emText').textContent=emMsg();$('#emName').textContent=S.contact.name||'لم تُضف بعد';$('#emNum').textContent=S.contact.num||'أضف جهة اتصال من صفحة «أنا»';
+  $('#emQuick').innerHTML=EMQ.map(([w,i])=>`<button class="tile pink" data-w="${w}"><span class="ico">${ic(i)}</span><span class="lbl">${w}</span></button>`).join('');};
+$('#emSpeak').onclick=()=>speak(emMsg());
+$('#emShow').onclick=()=>showBig(emMsg());
+$('#emQuick').onclick=e=>{const b=e.target.closest('[data-w]');if(!b)return;let w=b.dataset.w;if(w==='اتصل بأهلي')w=S.contact.num?`من فضلك اتصل بـ${S.contact.name||'أهلي'}. الرقم هو ${S.contact.num}.`:'من فضلك اتصل بأهلي.';speak(w);showBig(w);};
+$('#emCopy').onclick=()=>{const n=S.contact.num;if(!n)return toast('أضف رقماً من صفحة «أنا» أولاً','phone');navigator.clipboard?.writeText(n).then(()=>toast('نُسخ الرقم','check'),()=>toast('حدّد الرقم لنسخه','phone'));};
+
+/* ---------- my day ---------- */
+const SCHED=[['7:30','الاستيقاظ','sun'],['7:45','ارتداء الملابس','shirt'],['8:00','الفطور','eat'],['8:30','المدرسة','school'],['12:30','الغداء','eat'],['4:00','وقت اللعب','ball'],['7:00','الاستحمام','toilet'],['8:00','قصة ثم النوم','sleep']];
+const FEEL=[['سعيد','smile','#FBF3D0'],['حزين','sad','#E3EEF8'],['غاضب','angry','#F9E3E1'],['متعب','sleep','#EDE6F8'],['خائف','scared','#F2EDE3'],['هادئ','calm','#E3F3E8']];
+function renderDay(){
+  const nowIdx=SCHED.findIndex((_,i)=>!S.sched[i]);
+  let day='اليوم';try{day=new Date().toLocaleDateString('ar-EG',{weekday:'long'});}catch(e){}
+  $('#dayName').innerHTML=ic('calendar')+esc(day);
+  $('#schedList').innerHTML=SCHED.map(([t,l,i],k)=>{const d=S.sched[k],now=k===nowIdx;return `<button class="sched ${d?'done':''} ${now?'now':''}" data-k="${k}"><span class="t" dir="ltr">${t}</span><span class="cbtn" style="width:42px;height:42px;border-radius:14px;${now?'background:var(--pa);color:var(--pa-ink);border:0':''}">${ic(i)}</span><b class="grow">${l}</b>${d?`<span style="color:var(--ok)">${ic('check')}</span>`:now?'<span class="pill" style="background:var(--pa);color:var(--pa-ink)">الآن</span>':''}</button>`;}).join('')+(nowIdx<0?'<button class="btn line sm" id="schedReset" style="align-self:center">ابدأ يوماً جديداً</button>':'');
+  $('#feelGrid').innerHTML=FEEL.map(([w,i,c])=>`<button class="tile" data-f="${w}"><span class="ico" style="background:${c};color:#3B1626;border-radius:16px;padding:8px;display:grid">${ic(i)}</span><span class="lbl">${w}</span></button>`).join('');
+}
+$('#schedList').onclick=e=>{if(e.target.closest('#schedReset')){S.sched={};save('sched');renderDay();return;}const b=e.target.closest('[data-k]');if(!b)return;const k=+b.dataset.k;S.sched[k]=!S.sched[k];save('sched');if(S.sched[k])speak('انتهينا من '+SCHED[k][1]+'!',{silent:true});renderDay();};
+$('#feelGrid').onclick=e=>{const b=e.target.closest('[data-f]');if(b)speak('أنا '+b.dataset.f);};
+hooks.day=renderDay;
+
+/* ---------- learning hub ---------- */
+const LESSONS=[{id:'what',t:'ما هي أبراكسيا الكلام؟',d:'الفكرة والخطة والحركة',i:'book',m:'5 دقائق'},{id:'brain',t:'استكشف الدماغ ثلاثي الأبعاد',d:'شاهد المناطق التي تخطط للكلام',i:'cube',m:'4 دقائق'},{id:'mouth',t:'شاهد الفم وقلّده',d:'حركات الفم بالتصوير البطيء',i:'mouth',m:'تدريب'},{id:'guide',t:'كيف نتواصل معهم',d:'افعل ولا تفعل، ومواقف للتدريب',i:'people',m:'6 دقائق'},{id:'quiz',t:'اختبار سريع',d:'تأكد مما تعلّمته',i:'quiz',m:'3 دقائق'}];
+function markDone(id){if(!S.done[id]){S.done[id]=true;save('done');addStars(2);toast('أنهيت الدرس · +2 نجمة','star');}}
+hooks.learn=()=>{const d=LESSONS.filter(l=>S.done[l.id]).length;
+  $('#hubBar').style.width=(d/LESSONS.length*100)+'%';
+  const next=LESSONS.find(l=>!S.done[l.id]);$('#hubTitle').textContent=next?(d?'أنهيت '+num(d)+' من '+num(LESSONS.length)+' · التالي: '+next.t:'ابدأ بالدرس الأول'):'أنهيت كل الدروس. أحسنت!';
+  $('#lessonList').innerHTML=LESSONS.map((l,k)=>`<button class="lesson ${S.done[l.id]?'done':''}" data-go="${l.id}"><span class="n">${S.done[l.id]?ic('check'):ic(l.i)}</span><span class="grow"><span class="eyebrow">الدرس ${num(k+1)} · ${l.m}</span><h3>${l.t}</h3><span class="small muted">${l.d}</span></span>${ic('next')}</button>`).join('');};
+
+/* what */
+const SIGNS=['ينطق الكلمة نفسها بطرق مختلفة في كل مرة','يبحث بفمه أو يتلمّس الحركة قبل الكلام','الكلمات القصيرة أسهل عليه من الطويلة','أصوات الحروف المتحركة مشوّهة','إيقاع متقطع أو رتيب، مع توقفات بين الأصوات','يفهم أكثر بكثير مما يستطيع قوله'];
+function renderSigns(){$('#signList').innerHTML=SIGNS.map((s,k)=>`<button class="check ${S.signs[k]?'on':''}" data-k="${k}" style="width:100%;text-align:start"><span class="box">${ic('check')}</span><span>${s}</span></button>`).join('')+`<p class="small muted">لاحظت ${num(Object.values(S.signs).filter(Boolean).length)} من ${num(SIGNS.length)}. أخصائي النطق واللغة وحده يستطيع تشخيص الأبراكسيا.</p>`;}
+$('#signList').onclick=e=>{const b=e.target.closest('[data-k]');if(!b)return;S.signs[b.dataset.k]=!S.signs[b.dataset.k];save('signs');renderSigns();};
+$('#whatListen').onclick=()=>speak($('#whatLead').textContent,{silent:true});
+$('#whatDone').onclick=()=>{markDone('what');go('learn');};
+hooks.what=renderSigns;
+
+/* ---------- guide ---------- */
+const GUIDE={
+apraxia:{do:[['clock','امنحه وقتاً إضافياً','انتظر بهدوء. عُدّ إلى عشرة في سرّك قبل أن تساعد.'],['quiz','اسأل أسئلة جوابها نعم أو لا','«هل تريد ماء؟» أسهل من «ماذا تريد؟»'],['point','رحّب بكل طرق التواصل','الإشارة والإيماءات والكتابة والصور وهذا التطبيق، كلها طرق للكلام.'],['eye','قابله بوجهك في إضاءة جيدة','قد ينظر إلى فمك ليقلّد الحركات.'],['repeat','كرّر ما فهمته لتتأكد','«تريد أن تخرج، صحيح؟» ثم اتركه يؤكد.']],
+dont:[['close','لا تكمل كلماته عنه','إلا إذا طلب ذلك. التخمين السريع قد يسبب الإحباط.'],['close','لا تتظاهر بأنك فهمت','قل «أرني بطريقة أخرى» بدلاً من ذلك.'],['close','لا ترفع صوتك ولا تكلّمه كطفل','سمعه وفهمه سليمان في الغالب.']]},
+autism:{do:[['eye','استخدم الصور، وأرِه بدل أن تقول فقط','الوسائل البصرية تجعل الكلام أسهل في المتابعة.'],['calendar','اجعل الأمور متوقعة','قل ماذا يحدث أولاً وماذا بعده. نبّهه قبل أي تغيير.'],['chat','استخدم كلمات واضحة ومباشرة','«البس حذاءك» أوضح من «يلا نتحرك».'],['clock','امنحه وقتاً ليفهم','انتظر قبل أن تكرر، وكرّر بالكلمات نفسها.'],['headphones','خفّف الضوضاء والأضواء','المكان الهادئ يساعد على التواصل.']],
+dont:[['close','لا تجبره على النظر في عينيك','كثير من المصابين بالتوحد ينصتون أفضل من دون ذلك.'],['close','لا تسأل أسئلة كثيرة مرة واحدة','اسأل عن شيء واحد في كل مرة.'],['close','لا تعتبر الحركات المتكررة سلوكاً سيئاً','غالباً ما تساعده على الهدوء والتركيز.']]},
+ds:{do:[['chat','استخدم جملاً قصيرة وبسيطة','فكرة واحدة في كل جملة، مع التركيز على الكلمات المهمة.'],['wave','أضف إشارات وإيماءات','الإشارة مع الكلام تدعم الفهم والنطق.'],['eye','أرِه صوراً وأشياء حقيقية','الرؤية تساعد أكثر من السمع وحده.'],['check','تأكد من الفهم بلطف','«هل يمكنك أن تريني؟» أفضل من «هل فهمت؟»'],['star','احتفل بكل محاولة','امدح المجهود لتبني ثقته بنفسه.']],
+dont:[['close','لا تتكلم بدلاً منه','أعطه فرصة ليجيب حتى لو أخذ وقتاً.'],['close','لا تكلّم المراهقين والكبار كأنهم أطفال','تكلّم ببساطة، لكن باحترام يناسب عمره.'],['close','لا تستعجل','الهدوء يساعد عندما يكون الكلام صعب الفهم.']]}
+};
+const SCEN=[
+{q:'صديقك المصاب بالأبراكسيا يحاول بجهد أن يقول كلمة ويتوقف عندها. ماذا تفعل؟',o:[['أكمل الكلمة عنه فوراً',0,'التخمين السريع قد يشعره بالاستعجال. انتظر أولاً، ثم اعرض طريقة أخرى.'],['أنتظر بهدوء، ثم أعرض عليه أن يشير أو يكتب أو يستخدم التطبيق',1,'صحيح. الوقت مع طريقة أخرى للتعبير يخففان الضغط.'],['أطلب منه أن يقولها بصوت أعلى',0,'المشكلة ليست في ارتفاع الصوت، بل في خطة الحركة.']]},
+{q:'لم تفهم ما قاله. ما أفضل رد؟',o:[['أومئ وأبتسم حتى لا يشعر بالحرج',0,'التظاهر بالفهم يسبب سوء التفاهم. كن صادقاً ولطيفاً.'],['«لم أفهم. هل يمكنك أن تريني بطريقة أخرى؟»',1,'صحيح. هذا يحافظ على استمرار الحديث ويحترمه.'],['أغيّر الموضوع',0,'ما زال لديه ما يقوله. جرّب طريقة أخرى أولاً.']]},
+{q:'تريد أن تعرف إن كان الطفل يريد وجبة خفيفة. أي سؤال هو الأسهل؟',o:[['«ماذا تحب أن تأكل؟»',0,'الأسئلة المفتوحة تحتاج كلمات كثيرة، وهذا أصعب مع الأبراكسيا.'],['«هل تريد تفاحة؟» وأنت تريه إياها',1,'صحيح. سؤال بنعم أو لا مع صورة أو شيء حقيقي هو الأسهل.'],['«احكِ لي عن يومك أولاً»',0,'الإجابات الطويلة هي الأصعب.']]},
+{q:'طالب مصاب بالتوحد منزعج من الضوضاء. ما الذي يساعد أكثر؟',o:[['أشرح القواعد مرة أخرى بصوت عالٍ',0,'الضوضاء الإضافية تزيد التوتر.'],['أعرض عليه بطاقة الاستراحة ومكاناً هادئاً',1,'صحيح. الاستراحة تساعده على الهدوء والتواصل.'],['أطلب منه أن ينظر في عينيّ ويستمع',0,'إجباره على النظر في العينين قد يجعل الاستماع أصعب.']]}
+];
+let gTab='apraxia',scI=0;
+function renderGuide(){
+  $$('#gSeg button').forEach(b=>b.classList.toggle('on',b.dataset.g===gTab));
+  const g=GUIDE[gTab];
+  const item=([i,t,d],bad)=>`<div class="li"><div class="ico" style="${bad?'background:var(--bad-soft);color:var(--bad);border:0':'background:var(--ok-soft);color:var(--ok);border:0'}">${ic(i)}</div><div><b>${t}</b><p class="small muted">${d}</p></div></div>`;
+  $('#gBody').innerHTML=`<details class="acc" open><summary>افعل${ic('next')}</summary><div class="in">${g.do.map(x=>item(x,0)).join('')}</div></details><details class="acc"><summary>تجنّب${ic('next')}</summary><div class="in">${g.dont.map(x=>item(x,1)).join('')}</div></details>`;
+  const s=SCEN[scI];$('#scQ').textContent=s.q;$('#scFb').textContent='';
+  $('#scOpts').innerHTML=s.o.map(([t],k)=>`<button class="opt" data-k="${k}"><span class="k">${'أبج'[k]}</span><span>${esc(t)}</span></button>`).join('');
+}
+$('#gSeg').onclick=e=>{const b=e.target.closest('[data-g]');if(b){gTab=b.dataset.g;renderGuide();}};
+$('#scOpts').onclick=e=>{const b=e.target.closest('[data-k]');if(!b)return;const o=SCEN[scI].o[+b.dataset.k];
+  $$('#scOpts .opt').forEach((x,k)=>{x.classList.remove('right','wrong');if(SCEN[scI].o[k][1])x.classList.add('right');});if(!o[1])b.classList.add('wrong');
+  $('#scFb').innerHTML=(o[1]?'<b style="color:var(--ok)">اختيار جيد. </b>':'<b style="color:var(--bad)">ليس تماماً. </b>')+esc(o[2]);};
+$('#scNext').onclick=()=>{scI=(scI+1)%SCEN.length;renderGuide();};
+$('#guideDone').onclick=()=>{markDone('guide');go('learn');};
+hooks.guide=()=>{gTab=S.path;renderGuide();};
+
+/* ---------- quiz ---------- */
+const QZ=[
+{q:'ما هي أبراكسيا الكلام؟',o:['صعوبة في تخطيط حركات الفم للكلام','ضعف في عضلات الفم','مشكلة في السمع','عدم فهم الكلمات'],a:0,e:'العضلات تعمل. الدماغ يجد صعوبة في تخطيط الحركات وترتيبها.'},
+{q:'أي من هذه علامة شائعة لأبراكسيا الكلام الطفولية؟',o:['ضعف عضلات الوجه حتى في الراحة','نطق الكلمة نفسها بطرق مختلفة في كل مرة','صعوبة في الكلمات الطويلة جداً فقط','عدم سماع الأصوات'],a:1,e:'الأخطاء غير الثابتة تحدث لأن خطة الحركة تتغير في كل محاولة.'},
+{q:'شخص مصاب بالأبراكسيا توقف عند كلمة. ماذا تفعل؟',o:['أكمل الكلمة عنه فوراً','أطلب منه أن يتكلم بصوت أعلى','أنتظر بهدوء وأعرض طرقاً أخرى للتواصل','أتظاهر بأنني فهمت'],a:2,e:'الوقت والخيارات الأخرى (الإشارة، الكتابة، التطبيق) تخفف الضغط.'},
+{q:'أي منطقة في الدماغ ترتبط غالباً بأبراكسيا الكلام المكتسبة؟',o:['مؤخرة الدماغ المسؤولة عن الرؤية','المناطق الأمامية اليسرى ومنها منطقة بروكا','الحُصين المسؤول عن الذاكرة','منطقة فيرنيكه وحدها'],a:1,e:'الضرر في مناطق تخطيط الكلام الأمامية اليسرى، غالباً بسبب جلطة، هو السبب الأشيع لدى البالغين.'},
+{q:'هل استخدام تطبيق للكلام (التواصل البديل) يمنع الطفل من تعلّم النطق؟',o:['نعم، دائماً','لا، تشير الأبحاث إلى أنه قد يدعم الكلام','للكبار فقط','فقط إذا استُخدم يومياً'],a:1,e:'التواصل البديل يمنح صوتاً الآن، وتشير الدراسات إلى أنه لا يعيق الكلام المنطوق.'},
+{q:'أي خطة تدريب تساعد أكثر؟',o:['جلسة طويلة واحدة في الشهر','جلسات قصيرة ومتكررة مع تكرار كثير','القراءة بصمت','الانتظار حتى يكبر الطفل'],a:1,e:'تعلّم الحركة يحتاج إلى تكرار كثير موزّع على فترات.'}];
+let qi=0,qScore=0,qAns=false;
+function renderQuiz(){
+  $('#qCount').textContent=num(Math.min(qi+1,QZ.length))+' / '+num(QZ.length);$('#qBar').style.width=(qi/QZ.length*100)+'%';
+  if(qi>=QZ.length){$('#qBar').style.width='100%';$('#qCount').textContent='انتهى';
+    $('#qBody').innerHTML=`<div class="card stack" style="align-items:center;text-align:center;gap:10px"><span class="star" style="display:grid">${ic('star').replace('class="i','style="width:48px;height:48px" class="i')}</span><h1>${num(qScore)} من ${num(QZ.length)}</h1><p class="muted">${qScore>=5?'ممتاز. أنت تفهم أبراكسيا الكلام جيداً.':qScore>=3?'عمل جيد. راجع الدروس لتكمل ما ينقصك.':'استمر. جرّب الدروس ثم أعد الاختبار.'}</p><div class="grid2" style="width:100%"><button class="btn line" id="qAgain">حاول مرة أخرى</button><button class="btn" data-go="learn">العودة للدروس</button></div></div>`;
+    $('#qAgain').onclick=()=>{qi=0;qScore=0;renderQuiz();};markDone('quiz');return;}
+  const Q=QZ[qi];qAns=false;
+  $('#qBody').innerHTML=`<h2>${esc(Q.q)}</h2><div class="stack" style="gap:10px" id="qOpts">${Q.o.map((o,k)=>`<button class="opt" data-k="${k}"><span class="k">${'أبجد'[k]}</span><span>${esc(o)}</span></button>`).join('')}</div><div id="qFb"></div>`;
+}
+$('#qBody').onclick=e=>{const b=e.target.closest('#qOpts [data-k]');if(!b||qAns)return;qAns=true;const Q=QZ[qi],k=+b.dataset.k,ok=k===Q.a;if(ok)qScore++;
+  $$('#qOpts .opt').forEach((x,j)=>{if(j===Q.a){x.classList.add('right');x.querySelector('.k').innerHTML=ic('check');}else if(j===k)x.classList.add('wrong');});
+  $('#qFb').innerHTML=`<div class="card li" style="background:${ok?'var(--ok-soft)':'var(--bad-soft)'};border:0"><div class="ico" style="background:var(--card);border:0">${ic('idea')}</div><div><b>${ok?'إجابة صحيحة!':'ليس تماماً.'}</b><p class="small">${esc(Q.e)}</p></div></div><button class="btn block" id="qNext" style="margin-top:12px">${qi===QZ.length-1?'اعرض نتيجتي':'السؤال التالي'} ${ic('next')}</button>`;
+  $('#qNext').onclick=()=>{qi++;renderQuiz();};};
+hooks.quiz=()=>{if(qi>=QZ.length){qi=0;qScore=0;}renderQuiz();};
+
+/* ---------- me ---------- */
+hooks.me=()=>{$('#meName').value=S.name;$('#mePath').value=S.path;$('#meRate').value=S.rate;$('#meRateV').textContent=S.rate+'×';$('#cName').value=S.contact.name;$('#cNum').value=S.contact.num;renderStars();pickVoice();};
+$('#meName').oninput=e=>{S.name=e.target.value;save('name');renderHome();};
+$('#mePath').onchange=e=>setPath(e.target.value);
+$('#meRate').oninput=e=>{S.rate=+e.target.value;save('rate');$('#meRateV').textContent=S.rate+'×';};
+$('#meTest').onclick=()=>speak('مرحباً، اسمي '+(S.name||'صديقك')+'.');
+$('#cName').oninput=e=>{S.contact.name=e.target.value;save('contact');};
+$('#cNum').oninput=e=>{S.contact.num=e.target.value;save('contact');};
+let resetArm=false;
+$('#meReset').onclick=()=>{if(!resetArm){resetArm=true;$('#meResetNote').hidden=false;setTimeout(()=>{resetArm=false;$('#meResetNote').hidden=true;},4000);return;}
+  Object.assign(S,{stars:0,done:{},sched:{},phrases:[],signs:{}});['stars','done','sched','phrases','signs'].forEach(save);resetArm=false;$('#meResetNote').hidden=true;renderStars();renderHome();toast('تم مسح التقدم','check');};
+
+/* ================= MOUTH COACH ================= */
+const V={
+ rest:{open:.06,width:1,round:0,teeth:0,tip:0,back:0,out:0,llip:0,press:0},
+ BMP:{open:0,width:1,round:0,teeth:0,tip:0,back:0,out:0,llip:0,press:1},
+ FV:{open:.2,width:1.02,round:0,teeth:1,tip:0,back:0,out:0,llip:1,press:0},
+ TDN:{open:.36,width:1,round:0,teeth:.7,tip:1,back:0,out:0,llip:0,press:0},
+ L:{open:.48,width:1,round:0,teeth:.6,tip:1,back:0,out:0,llip:0,press:0},
+ KG:{open:.42,width:1,round:0,teeth:.5,tip:0,back:1,out:0,llip:0,press:0},
+ S:{open:.12,width:1.08,round:0,teeth:1,tip:.55,back:0,out:0,llip:0,press:0},
+ SH:{open:.24,width:.9,round:.6,teeth:.9,tip:.4,back:0,out:0,llip:0,press:0},
+ TH:{open:.3,width:1,round:0,teeth:.9,tip:0,back:0,out:1,llip:0,press:0},
+ OO:{open:.2,width:1,round:1,teeth:0,tip:0,back:.4,out:0,llip:0,press:0},
+ OH:{open:.55,width:1,round:.7,teeth:.2,tip:0,back:.2,out:0,llip:0,press:0},
+ AH:{open:1,width:.96,round:0,teeth:.35,tip:0,back:0,out:0,llip:0,press:0},
+ EE:{open:.24,width:1.2,round:0,teeth:.8,tip:.2,back:0,out:0,llip:0,press:0},
+ EH:{open:.55,width:1.08,round:0,teeth:.5,tip:0,back:0,out:0,llip:0,press:0},
+ UH:{open:.45,width:1,round:.1,teeth:.25,tip:0,back:.1,out:0,llip:0,press:0},
+ R:{open:.32,width:.96,round:.2,teeth:.5,tip:.75,back:0,out:0,llip:0,press:0},
+ H:{open:.5,width:1,round:0,teeth:.3,tip:0,back:0,out:0,llip:0,press:0}
+};
+const CUE={
+ BMP:['أطبق شفتيك معاً','ضع إصبعك على شفتيك وأحسّ بهما تنطبقان، ثم افتحهما بسرعة.'],
+ FV:['أسنانك العليا تلمس شفتك السفلى','عضّ شفتك السفلى بلطف وأخرج الهواء.'],
+ TDN:['طرف اللسان يلمس خلف الأسنان العليا','المس المكان البارز خلف أسنانك العليا بطرف لسانك.'],
+ L:['ارفع طرف اللسان والفم مفتوح','ارفع طرف لسانك بينما يبقى فمك مفتوحاً.'],
+ KG:['ارفع مؤخرة اللسان','ضع إصبعك تحت ذقنك وأحسّ بمؤخرة اللسان ترتفع.'],
+ S:['أسنان متقاربة، ابتسم وأخرج الهواء','ابتسم وأسنانك شبه مغلقة، ودع الهواء يصفر بينها.'],
+ SH:['الشفتان للأمام، صوت «ششش»','ادفع شفتيك للأمام قليلاً كأنك تطلب الهدوء.'],
+ TH:['طرف اللسان بين الأسنان','ضع طرف لسانك بلطف بين أسنانك وانفخ.'],
+ OO:['دوّر شفتيك كدائرة صغيرة','اعمل شكل البوسة، وأحسّ بشفتيك تتقدمان.'],
+ OH:['دوّر شفتيك وافتح','اعمل شكلاً دائرياً كأنك متفاجئ.'],
+ AH:['افتح فكّك واسعاً','افتح كأنك عند الطبيب: «آآآ». أحسّ بفكّك ينزل.'],
+ EE:['ابتسامة عريضة والأسنان قريبة','مدّ شفتيك في ابتسامة واسعة.'],
+ EH:['افتح قليلاً مع ابتسامة خفيفة','الفك نصف مفتوح والشفتان عريضتان قليلاً.'],
+ UH:['استرخِ وافتح قليلاً','أرخِ فكّك وقل صوتاً قصيراً وسهلاً.'],
+ R:['طرف اللسان يرفرف خلف الأسنان','ارفع طرف لسانك قرب سقف الفم ودعه يهتز: «ررر».'],
+ H:['افتح وأخرج النفَس','افتح فمك وأخرج هواءً دافئاً كأنك تبخّر مرآة.'],
+ rest:['أرخِ فمك','الشفتان مغلقتان بلطف والفك مرتخٍ.']
+};
+const WORDS=[
+ {w:'ماما',p:[['BMP','م'],['AH','ا'],['BMP','م'],['AH','ا']]},
+ {w:'بابا',p:[['BMP','ب'],['AH','ا'],['BMP','ب'],['AH','ا']]},
+ {w:'لا',p:[['L','ل'],['AH','ا']]},
+ {w:'نعم',p:[['TDN','ن'],['AH','عَ'],['BMP','م']]},
+ {w:'ماء',p:[['BMP','م'],['AH','ا'],['H','ء']]},
+ {w:'موز',p:[['BMP','م'],['OO','و'],['S','ز']]},
+ {w:'كمان',p:[['KG','ك'],['EH','ـَ'],['BMP','م'],['AH','ا'],['TDN','ن']]},
+ {w:'بيت',p:[['BMP','ب'],['EE','ي'],['TDN','ت']]},
+ {w:'فيل',p:[['FV','ف'],['EE','ي'],['L','ل']]},
+ {w:'شكراً',p:[['SH','ش'],['UH','ـُ'],['KG','ك'],['R','ر'],['AH','ا'],['TDN','ن']]},
+ {w:'سمك',p:[['S','س'],['EH','ـَ'],['BMP','م'],['EH','ـَ'],['KG','ك']]},
+ {w:'ثوب',p:[['TH','ث'],['OO','و'],['BMP','ب']]}
+];
+const SOUNDS=[['BMP','ب · م'],['FV','ف'],['TDN','ت · د · ن'],['L','ل'],['KG','ك · غ'],['S','س · ز · ص'],['SH','ش · ج'],['TH','ث · ذ · ظ'],['OO','و · ـُ'],['AH','ا · ـَ'],['EE','ي · ـِ'],['R','ر'],['H','ه · ح']];
+const lerp=(a,b,t)=>a+(b-a)*t;
+function mouthSVG(p){
+  const cx=160,cy=118;
+  const w=74*p.width*(1-.42*p.round);
+  const gap=1.5+p.open*58*(1-.25*p.round)+(p.round*8*(p.open>.1?1:0));
+  let ui=cy-gap*.32, li=cy+gap*.68;
+  li-=p.llip*Math.max(0,li-ui-6)*.75;
+  const tU=15+p.press*3-p.round*2, tL=19+p.press*4-p.round*3;
+  const cw=w+8-(p.round*4); const cyc=cy+p.open*4;
+  const jaw=p.open*22;
+  const outer=`M${cx-cw},${cyc} C${cx-w*.75},${ui-tU*.4} ${cx-w*.45},${ui-tU-3} ${cx-w*.18},${ui-tU-1} Q${cx},${ui-tU+5} ${cx+w*.18},${ui-tU-1} C${cx+w*.45},${ui-tU-3} ${cx+w*.75},${ui-tU*.4} ${cx+cw},${cyc} C${cx+w*.7},${li+tL+2} ${cx+w*.3},${li+tL+5} ${cx},${li+tL+5} C${cx-w*.3},${li+tL+5} ${cx-w*.7},${li+tL+2} ${cx-cw},${cyc}Z`;
+  const iw=cw-6;
+  const inner=`M${cx-iw},${cyc} Q${cx-w*.4},${ui} ${cx},${ui} Q${cx+w*.4},${ui} ${cx+iw},${cyc} Q${cx+w*.45},${li} ${cx},${li} Q${cx-w*.45},${li} ${cx-iw},${cyc}Z`;
+  const th=p.teeth*11;
+  const tW=w*.78;
+  let teeth='';
+  if(th>.5){teeth+=`<rect x="${cx-tW}" y="${ui-4}" width="${tW*2}" height="${th+4}" rx="3" fill="var(--tooth)"/>`;
+    for(let k=-3;k<=3;k++)teeth+=`<line x1="${cx+k*tW/3.6}" y1="${ui}" x2="${cx+k*tW/3.6}" y2="${ui+th}" stroke="var(--line)" stroke-width="1"/>`;
+    const lth=Math.min(th*.8,Math.max(0,li-ui-th-2));
+    if(lth>1&&p.llip<.3)teeth+=`<rect x="${cx-tW*.85}" y="${li-lth}" width="${tW*1.7}" height="${lth+4}" rx="3" fill="var(--tooth)"/>`;}
+  const tBase=li-3, tTop=ui+th+4;
+  const ty=lerp(tBase,tTop,Math.max(p.tip*.85,p.back*.55));
+  const tr=Math.max(4,(li-ui)*.35+p.back*6);
+  let tongue=`<ellipse cx="${cx}" cy="${ty+tr*.6}" rx="${w*.62}" ry="${tr+6}" fill="var(--tongue)"/>`;
+  if(p.tip>.3)tongue+=`<ellipse cx="${cx}" cy="${lerp(ty,tTop,p.tip)}" rx="${w*.22}" ry="${6+p.tip*4}" fill="var(--tongue)"/>`;
+  if(p.back>.4)tongue+=`<path d="M${cx-w*.4},${ty+6} Q${cx},${ty-6} ${cx+w*.4},${ty+6}" stroke="rgba(0,0,0,.18)" stroke-width="2" fill="none"/>`;
+  const outT=p.out?`<ellipse cx="${cx}" cy="${li+2}" rx="${w*.34*p.out}" ry="${8*p.out}" fill="var(--tongue)" stroke="var(--ink)" stroke-width="1.6"/>`:'';
+  const chinY=200+jaw;
+  const face=`<path d="M138,26 Q160,40 182,26" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/><path d="M150,30 q-4,8 2,10 M170,30 q4,8 -2,10" fill="none" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round"/>
+   <path d="M40,40 Q34,${120+jaw*.5} 70,${170+jaw*.8} Q110,${chinY+20} 160,${chinY+22} Q210,${chinY+20} 250,${170+jaw*.8} Q286,${120+jaw*.5} 280,40" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+   <path d="M140,${chinY} Q160,${chinY+6} 180,${chinY}" fill="none" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>
+   <path d="M${cx-cw-6},${cyc-10} q-6,10 0,20 M${cx+cw+6},${cyc-10} q6,10 0,20" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>`;
+  const pressLine=p.press>.5?`<path d="M${cx-cw+2},${cyc} Q${cx},${cyc+2} ${cx+cw-2},${cyc}" stroke="var(--ink)" stroke-width="2.4" fill="none"/>`:'';
+  return `${face}<defs><clipPath id="mc${p._id||''}"><path d="${inner}"/></clipPath></defs>
+   <path d="${outer}" fill="var(--lip)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/>
+   ${gap>3?`<path d="${inner}" fill="var(--mouth)"/><g clip-path="url(#mc${p._id||''})">${tongue}${teeth}</g><path d="${inner}" fill="none" stroke="var(--ink)" stroke-width="1.8"/>`:pressLine||`<path d="M${cx-cw+2},${cyc} Q${cx},${cyc+3} ${cx+cw-2},${cyc}" stroke="var(--ink)" stroke-width="2" fill="none"/>`}
+   ${outT}`;
+}
+const Coach=(()=>{
+  let word=WORDS[0],phase=-1,cur={...V.rest},target={...V.rest},speed=.7,playing=false,raf=0,timer=0,selfURL=null,checks={},looping=false,stream=null;
+  const m1=$('#mouth'),m2=$('#mouth2');
+  function draw(){m1.innerHTML=mouthSVG({...cur,_id:'a'});m2.innerHTML=mouthSVG({...cur,_id:'b'});}
+  function tick(){let moving=false;for(const k in target){const d=target[k]-cur[k];if(Math.abs(d)>.002){cur[k]+=d*.22;moving=true;}else cur[k]=target[k];}draw();if(moving||playing)raf=requestAnimationFrame(tick);else raf=0;}
+  function kick(){if(!raf)raf=requestAnimationFrame(tick);}
+  function touch(icn,title,text){$('#mTouch').innerHTML=`<div class="ico" style="background:var(--pa-soft);color:var(--pa-text);border:0">${ic(icn)}</div><div><b>${title}</b><p class="small muted">${text}</p></div>`;}
+  function setPhase(i){phase=i;const ph=word.p[i];const v=ph?ph[0]:'rest';target={...V[v]};kick();
+    $$('#mSounds .s').forEach((s,k)=>s.classList.toggle('on',k===i));
+    const c=CUE[v];$('#mCue').textContent=c[0];touch('point','أحسّ بها',c[1]);}
+  function renderWord(){
+    $('#wordChips').innerHTML=WORDS.map(x=>`<button class="chip ${x===word?'on':''}" data-w="${x.w}">${x.w}</button>`).join('');
+    $('#mSounds').innerHTML=word.p.map(([v,l])=>`<span class="s">${l}</span>`).join('');
+    const uniq=[...new Set(word.p.map(x=>x[0]))];
+    $('#mChecks').innerHTML=uniq.map(v=>`<button class="check ${checks[v]?'on':''}" data-v="${v}" style="width:100%;text-align:start"><span class="box">${ic('check')}</span><span>${CUE[v][0]}</span></button>`).join('');
+    phase=-1;target={...V.rest};kick();$('#mCue').textContent='اضغط تشغيل لتشاهد «'+word.w+'»';
+    touch('eye','شاهد أولاً','شاهد الكلمة كاملة ببطء. ثم انتقل بين الأصوات بالأسهم وقلّد الشكل أمام المرآة.');
+  }
+  function stopPlay(){playing=false;clearTimeout(timer);$('#mPlay').innerHTML=ic('play')+'<span>تشغيل</span>';}
+  function play(withVoice=true){stopPlay();playing=true;$('#mPlay').innerHTML=ic('pause')+'<span>إيقاف مؤقت</span>';
+    const dur=560/speed;let i=0;
+    if(withVoice)speak(word.w,{silent:true,rate:Math.max(.5,speed*.8)});
+    const step=()=>{if(!playing)return;if(i<word.p.length){setPhase(i);i++;timer=setTimeout(step,dur);}else{setPhase(-1);target={...V.rest};$('#mCue').textContent='دورك. قل «'+word.w+'»';stopPlay();kick();
+      const v=$('#youPane video');if(v&&looping&&!v.srcObject){v.pause();}looping=false;}};
+    kick();step();}
+  $('#mPlay').onclick=()=>playing?stopPlay():play();
+  $('#mNext').onclick=()=>{stopPlay();setPhase(Math.min(word.p.length-1,phase+1));};
+  $('#mPrev').onclick=()=>{stopPlay();setPhase(Math.max(0,phase-1));};
+  $('#mHear').onclick=()=>speak(word.w,{silent:true,rate:Math.max(.5,speed*.8)});
+  $('#mSpeed').onclick=e=>{const b=e.target.closest('[data-s]');if(!b)return;speed=+b.dataset.s;$$('#mSpeed button').forEach(x=>x.classList.toggle('on',x===b));};
+  $('#wordChips').onclick=e=>{const b=e.target.closest('[data-w]');if(!b)return;stopPlay();word=WORDS.find(x=>x.w===b.dataset.w);checks={};renderWord();};
+  $('#mChecks').onclick=e=>{const b=e.target.closest('[data-v]');if(!b)return;checks[b.dataset.v]=!checks[b.dataset.v];b.classList.toggle('on');};
+  $('#mDid').onclick=()=>{const n=Math.max(1,Object.values(checks).filter(Boolean).length);addStars(n,$('#mStars'));toast('محاولة رائعة! +'+num(n)+' نجمة','star');markDone('mouth');};
+  $('#soundLib').innerHTML=SOUNDS.map(([v,l])=>`<button class="chip" data-v="${v}">${l}</button>`).join('');
+  $('#soundLib').onclick=e=>{const b=e.target.closest('[data-v]');if(!b)return;stopPlay();const v=b.dataset.v;target={...V[v]};kick();$$('#mSounds .s').forEach(s=>s.classList.remove('on'));$('#mCue').textContent=CUE[v][0];
+    touch('point','أحسّ بها · '+b.textContent,CUE[v][1]);window.scrollTo({top:0,behavior:'smooth'});};
+  $('#selfie').onchange=e=>{const f=e.target.files&&e.target.files[0];if(!f)return;stopCam();if(selfURL)URL.revokeObjectURL(selfURL);selfURL=URL.createObjectURL(f);
+    const pane=$('#youPane');pane.innerHTML='<span class="tag">أنت</span>'+(f.type.startsWith('video')?`<video src="${selfURL}" playsinline muted loop></video>`:`<img src="${selfURL}" alt="شكل فمك">`);
+    toast('تم. اضغط «شغّل معاً»','video');};
+  $('#together').onclick=()=>{const v=$('#youPane video');if(v&&!v.srcObject){v.currentTime=0;v.play().catch(()=>{});looping=true;}else if(!v&&!$('#youPane img'))toast('شغّل المرآة المباشرة أو صوّر نفسك أولاً','video');play(true);};
+  /* live mirror: works on a normal website, hidden inside an embedded frame where the camera is blocked */
+  const embedded=(()=>{try{return window.self!==window.top}catch(e){return true}})();
+  if(embedded){$('#liveBtn').hidden=true;$('#mirrorNote').textContent='صوّر نفسك بالكاميرا الأمامية، ثم اضغط «شغّل معاً» لترى فمك بجانب النموذج. الفيديو يبقى على جهازك.';}
+  function stopCam(){if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;$('#liveBtn').innerHTML=ic('eye')+'مرآة مباشرة';}}
+  $('#liveBtn').onclick=async()=>{
+    if(stream){stopCam();$('#youPane').innerHTML='<span class="tag">أنت</span><div class="stack" style="align-items:center;gap:6px;padding:10px;text-align:center">'+ic('video')+'<span class="small muted">الكاميرا متوقفة</span></div>';return;}
+    if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){toast('هذا المتصفح لا يدعم الكاميرا. جرّب «سجّل نفسي».','video');return;}
+    try{stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
+      const pane=$('#youPane');pane.innerHTML='<span class="tag">أنت · مباشر</span><video playsinline muted autoplay></video>';
+      const v=pane.querySelector('video');v.srcObject=stream;v.play().catch(()=>{});
+      $('#liveBtn').innerHTML=ic('close')+'أوقف المرآة';toast('المرآة تعمل. اضغط «شغّل معاً» وقلّد الفم','eye');}
+    catch(e){stream=null;toast('الكاميرا محجوبة. اسمح بالوصول إليها من إعدادات المتصفح، أو استخدم «سجّل نفسي».','video');}};
+  return {init(){if(!m1.innerHTML){renderWord();draw();}},stop(){stopPlay();stopCam();}};
+})();
+hooks.mouth=()=>Coach.init();
+
+/* ================= 3D BRAIN ================= */
+const REGIONS=[
+ {id:'broca',name:'منطقة بروكا',where:'الفص الجبهي الأيسر، الجزء السفلي',dir:[-.78,-.06,.62],r:.36,color:'#E9772F',kind:'تخطيط الكلام',
+  does:'تساعد على تحويل الكلمات التي تختارها إلى خطة كلام: أي أصوات وبأي ترتيب.',apr:'الضرر هنا، غالباً بسبب جلطة، من أشيع أسباب أبراكسيا الكلام لدى البالغين.'},
+ {id:'premotor',name:'القشرة أمام الحركية والباحة الحركية الإضافية',where:'الفص الجبهي الأيسر، الأعلى والأمام',dir:[-.35,.82,.45],r:.38,color:'#F2BE45',kind:'مرتبط بالتخطيط',
+  does:'تبني سلاسل الحركة وتبدؤها، مثل الانتقال من «با» إلى «نا».',apr:'المشكلة هنا قد تجعل بدء الكلمة صعباً، والانتقال بين الأصوات متقطعاً.'},
+ {id:'insula',name:'الفص الجزيري (الإنسولا)',where:'طيّة عميقة في الجهة اليسرى',dir:[-.92,.02,.3],r:.24,color:'#E39A3B',kind:'مرتبط بالتخطيط',
+  does:'منطقة عميقة من القشرة ترتبط بتنسيق حركات الفم المعقدة.',apr:'بعض دراسات الجلطات تربط ضرر الإنسولا اليسرى بأبراكسيا الكلام. ما زال العلماء يناقشون حجم دورها.'},
+ {id:'motor',name:'القشرة الحركية (الوجه والفم)',where:'شريط في منتصف الدماغ',dir:[-.86,.36,.06],r:.3,color:'#E58BB8',kind:'تخطيط الكلام',
+  does:'ترسل الأوامر النهائية إلى عضلات الشفتين واللسان والفك.',apr:'العضلات نفسها تعمل. في الأبراكسيا تصل التعليمات إلى هنا بخطة خاطئة. الضعف الناتج عن ضرر هذه المنطقة حالة مختلفة هي عُسر التلفظ.'},
+ {id:'basal',name:'العقد القاعدية',where:'في عمق المركز (استخدم الأشعة)',dir:[-.2,0,.1],r:0,color:'#6F8FD8',kind:'التوقيت',deep:true,
+  does:'تساعد على اختيار الحركة الصحيحة وبدئها بسلاسة.',apr:'قد تكون مشاركة في بعض الحالات المكتسبة، فتؤثر في سلاسة بدء الكلام واستمراره.'},
+ {id:'cereb',name:'المخيخ',where:'في الخلف، أسفل الدماغ',dir:[0,-.6,-.8],r:0,color:'#6F8FD8',kind:'التوقيت',
+  does:'يضبط توقيت الحركات وتنسيقها بدقة.',apr:'المشاكل هنا تسبب غالباً نوعاً من عُسر التلفظ، لكنه يدعم سلاسة ترتيب الكلام.'},
+ {id:'wern',name:'منطقة فيرنيكه',where:'الفص الصدغي الأيسر، الجزء الخلفي',dir:[-.84,-.22,-.48],r:.32,color:'#4FA88A',kind:'يعمل جيداً عادةً',
+  does:'تساعد على فهم اللغة وإيجاد الكلمات المناسبة.',apr:'تعمل جيداً عادةً في الأبراكسيا: معظم المصابين يفهمون كل ما تقوله.'}
+];
+const PATHWAY=[['wern','1 · فهم الكلمات واختيارها'],['broca','2 · تحويل الكلمات إلى خطة أصوات'],['insula','3 · تنسيق حركات الفم'],['premotor','4 · ترتيب السلسلة: ب، ا، ن، ا…'],['motor','5 · إرسال الأوامر إلى الشفتين واللسان والفك'],['cereb','6 · ضبط التوقيت'],['mouth','يخرج الكلام. في الأبراكسيا تختلط الخطوات من 2 إلى 4.']];
+const Brain=(()=>{
+  let ready=false,renderer,scene,camera,group,cortex,cereb,deep,markers={},base,sel=null,spin=true,xray=false,raf=0,running=false,zoom=5.6,tRot=null,pathAnim=null,pulse;
+  const canvas=$('#brainCanvas');
+  const S3=[.92,.82,1.2];
+  function noise(x,y,z){return .028*(Math.sin(9*x+2*Math.sin(7*y))*Math.sin(8*z+1.3)+.6*Math.sin(13*y+5*z)*Math.sin(11*x+1)+.45*Math.sin(17*z+3*x)*Math.cos(9*y));}
+  function radiusAt(x,y,z){let r=1+noise(x,y,z);
+    if(y>-.25)r-=Math.exp(-(x*x)/.004)*.1;
+    const sy=.02+.32*z;if(Math.abs(x)>.45&&z>-.45&&z<.75)r-=Math.exp(-Math.pow(y-sy,2)/.003)*.055;
+    if(y>-.1)r-=Math.exp(-Math.pow(z-(.02+.22*y),2)/.0018)*.04;
+    return r;}
+  function surf(d){const v=new THREE.Vector3(...d).normalize();const r=radiusAt(v.x,v.y,v.z);return new THREE.Vector3(v.x*S3[0]*r,v.y*S3[1]*r,v.z*S3[2]*r);}
+  function init(){
+    if(!window.THREE){$('#bHint').textContent='تعذّر تحميل العرض ثلاثي الأبعاد. تحقق من اتصالك.';return;}
+    renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});renderer.setPixelRatio(Math.min(2,devicePixelRatio||1));
+    scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(32,1,.1,100);camera.position.set(0,.15,zoom);
+    scene.add(new THREE.HemisphereLight(0xfff6f0,0xb9a6c8,.9));const dl=new THREE.DirectionalLight(0xffffff,.75);dl.position.set(3,4,5);scene.add(dl);const dl2=new THREE.DirectionalLight(0xffe8e8,.35);dl2.position.set(-4,-1,-3);scene.add(dl2);
+    group=new THREE.Group();scene.add(group);
+    const g=new THREE.SphereGeometry(1,170,130);const pos=g.attributes.position;base=[];
+    for(let i=0;i<pos.count;i++){const v=new THREE.Vector3(pos.getX(i),pos.getY(i),pos.getZ(i)).normalize();base.push(v.clone());
+      let r=radiusAt(v.x,v.y,v.z);let px=v.x*S3[0]*r,py=v.y*S3[1]*r,pz=v.z*S3[2]*r;if(py<-.42)py=-.42+(py+.42)*.45;if(pz<-.6&&py<-.2)py+=(-.2-py)*.25;pos.setXYZ(i,px,py,pz);}
+    g.computeVertexNormals();g.setAttribute('color',new THREE.BufferAttribute(new Float32Array(pos.count*3),3));
+    cortex=new THREE.Mesh(g,new THREE.MeshStandardMaterial({vertexColors:true,roughness:.82,metalness:0,transparent:true,opacity:1}));group.add(cortex);
+    const cg=new THREE.SphereGeometry(.5,90,60);const cp=cg.attributes.position;
+    for(let i=0;i<cp.count;i++){const v=new THREE.Vector3(cp.getX(i),cp.getY(i),cp.getZ(i));const n=v.clone().normalize();const r=1+.035*Math.sin(46*n.y+3*n.x);v.multiplyScalar(r);v.x*=1.45;v.y*=.72;cp.setXYZ(i,v.x,v.y,v.z);}
+    cg.computeVertexNormals();cereb=new THREE.Mesh(cg,new THREE.MeshStandardMaterial({color:0x9CCBC0,roughness:.85,transparent:true}));cereb.position.set(0,-.5,-.78);group.add(cereb);
+    const stem=new THREE.Mesh(new THREE.CylinderGeometry(.17,.12,.85,32),new THREE.MeshStandardMaterial({color:0xC9AACF,roughness:.9,transparent:true}));stem.position.set(0,-.86,-.35);stem.rotation.x=.35;group.add(stem);
+    deep=new THREE.Group();const bgm=new THREE.MeshStandardMaterial({color:0x6F8FD8,roughness:.5,emissive:0x1a2244});
+    [-.26,.26].forEach(x=>{const m=new THREE.Mesh(new THREE.SphereGeometry(.17,32,24),bgm);m.scale.set(.8,1,1.5);m.position.set(x,-.02,.12);deep.add(m);});
+    const ins=new THREE.Mesh(new THREE.SphereGeometry(.16,32,24),new THREE.MeshStandardMaterial({color:0xE39A3B,roughness:.5}));ins.scale.set(.4,1,1.6);ins.position.set(-.6,-.02,.22);deep.add(ins);
+    deep.visible=false;group.add(deep);
+    const mg=new THREE.SphereGeometry(.055,20,16);
+    REGIONS.forEach(R=>{let p;if(R.id==='cereb')p=new THREE.Vector3(-.45,-.48,-1.05);else if(R.id==='basal')p=new THREE.Vector3(-.26,-.02,.12);else p=surf(R.dir).multiplyScalar(1.025);
+      const m=new THREE.Mesh(mg,new THREE.MeshBasicMaterial({color:R.color}));m.position.copy(p);m.userData.id=R.id;if(R.deep)m.visible=false;group.add(m);markers[R.id]=m;});
+    pulse=new THREE.Mesh(new THREE.SphereGeometry(.07,20,16),new THREE.MeshBasicMaterial({color:0xffffff}));pulse.visible=false;group.add(pulse);
+    const ring=new THREE.Mesh(new THREE.SphereGeometry(.12,20,16),new THREE.MeshBasicMaterial({color:0xE9772F,transparent:true,opacity:.35}));pulse.add(ring);
+    group.rotation.set(.12,Math.PI/2,0);paint();bindInput();ready=true;
+  }
+  let baseCol;
+  function paint(){if(!baseCol)baseCol=new THREE.Color(0xCDAED6);const col=cortex.geometry.attributes.color;const c=new THREE.Color();
+    const active=REGIONS.filter(R=>R.r&&(sel?R.id===sel:true));
+    for(let i=0;i<base.length;i++){const v=base[i];c.copy(baseCol);
+      const n=noise(v.x,v.y,v.z)*4;c.offsetHSL(0,0,n*.25);
+      for(const R of active){const d=new THREE.Vector3(...R.dir).normalize();const dot=v.dot(d);const th=Math.cos(R.r);
+        if(dot>th){let t=Math.min(1,(dot-th)/(1-th)*2.2);if(sel&&R.id!==sel)t*=.25;c.lerp(new THREE.Color(R.color),t*(sel?.95:.75));}}
+      col.setXYZ(i,c.r,c.g,c.b);}
+    col.needsUpdate=true;
+    cereb.material.color.set(sel==='cereb'?'#6F8FD8':(sel?'#BFD6CF':'#9CCBC0'));
+  }
+  function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;if(!w)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+  let drag=null,pinch=null,moved=0;
+  function bindInput(){
+    canvas.addEventListener('pointerdown',e=>{canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,id:e.pointerId};moved=0;spinOff();});
+    canvas.addEventListener('pointermove',e=>{if(!drag||e.pointerId!==drag.id)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;moved+=Math.abs(dx)+Math.abs(dy);drag.x=e.clientX;drag.y=e.clientY;tRot=null;group.rotation.y+=dx*.01;group.rotation.x=Math.max(-1.1,Math.min(1.1,group.rotation.x+dy*.008));});
+    canvas.addEventListener('pointerup',e=>{if(drag&&moved<6)pick(e);drag=null;});
+    canvas.addEventListener('pointercancel',()=>drag=null);
+    canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(3.4,Math.min(8,zoom+e.deltaY*.004));},{passive:false});
+    canvas.addEventListener('touchstart',e=>{if(e.touches.length===2){drag=null;pinch=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);}},{passive:true});
+    canvas.addEventListener('touchmove',e=>{if(e.touches.length===2&&pinch){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);zoom=Math.max(3.4,Math.min(8,zoom*(pinch/d)));pinch=d;}},{passive:true});
+    canvas.addEventListener('touchend',()=>pinch=null);
+  }
+  let ray,mv;
+  function pick(e){if(!ray){ray=new THREE.Raycaster();mv=new THREE.Vector2();}const r=canvas.getBoundingClientRect();mv.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);ray.setFromCamera(mv,camera);
+    const mk=Object.values(markers).filter(m=>m.visible);let hit=ray.intersectObjects(mk)[0];
+    if(hit){select(hit.object.userData.id);return;}
+    hit=ray.intersectObjects([cortex,cereb])[0];
+    if(!hit){select(null);return;}
+    if(hit.object===cereb){select('cereb');return;}
+    const p=group.worldToLocal(hit.point.clone());const v=new THREE.Vector3(p.x/S3[0],p.y/S3[1],p.z/S3[2]).normalize();
+    let best=null,bd=-1;REGIONS.forEach(R=>{if(!R.r)return;const d=v.dot(new THREE.Vector3(...R.dir).normalize());if(d>Math.cos(R.r+.08)&&d>bd){bd=d;best=R.id;}});
+    select(best);if(!best)toast('هذه ليست من مناطق الكلام الرئيسية. اضغط على بقعة ملوّنة.','brain');}
+  function face(id){const m=markers[id];if(!m)return;const p=m.position;const th=Math.atan2(-p.x,p.z);const zr=-p.x*Math.sin(th)+p.z*Math.cos(th);const ph=Math.atan2(p.y,zr)*.7;tRot={x:ph,y:th};}
+  function select(id,quiet){sel=id;paint();renderRegions();
+    if(id){face(id);spinOff();if(REGIONS.find(r=>r.id===id).deep&&!xray)setXray(true);}
+    if(!quiet&&id)$('#bDetail').scrollIntoView({block:'nearest',behavior:'smooth'});}
+  function spinOff(){spin=false;$('#bSpin').classList.remove('on');}
+  function setXray(on){xray=on;$('#bXray').classList.toggle('on',on);cortex.material.opacity=on?.28:1;cortex.material.depthWrite=!on;cereb.material.opacity=on?.4:1;deep.visible=on;markers.basal.visible=on;}
+  function loop(){if(!running)return;raf=requestAnimationFrame(loop);
+    if(spin&&!drag)group.rotation.y+=.004;
+    if(tRot){let dy=tRot.y-group.rotation.y;dy=Math.atan2(Math.sin(dy),Math.cos(dy));group.rotation.y+=dy*.08;group.rotation.x+=(tRot.x-group.rotation.x)*.08;if(Math.abs(dy)<.002)tRot=null;}
+    camera.position.z+=(zoom-camera.position.z)*.12;
+    const t=performance.now()/1000;Object.entries(markers).forEach(([id,m])=>{const s=id===sel?1.5+.35*Math.sin(t*5):1+.15*Math.sin(t*3+id.length);m.scale.setScalar(s);});
+    if(pathAnim)stepPath();
+    renderer.render(scene,camera);}
+  function stepPath(){const a=pathAnim;const now=performance.now();const seg=Math.floor((now-a.t0)/a.dur);const f=((now-a.t0)%a.dur)/a.dur;
+    if(seg>=a.pts.length-1){pulse.visible=false;$('#bCaption').textContent=PATHWAY[PATHWAY.length-1][1];pathAnim=null;setTimeout(()=>{if(!pathAnim)$('#bCaption').hidden=true;},5000);$('#bPath').disabled=false;return;}
+    if(seg!==a.seg){a.seg=seg;const id=PATHWAY[seg][0];sel=id;paint();renderRegions(true);face(id);$('#bCaption').hidden=false;$('#bCaption').textContent=PATHWAY[seg][1];}
+    const e=f<.6?0:(f-.6)/.4;pulse.position.lerpVectors(a.pts[seg],a.pts[seg+1],e*e*(3-2*e));
+    const broken=['broca','insula','premotor'].includes(PATHWAY[seg][0]);pulse.material.color.set(broken&&f>.3&&f<.6&&Math.sin(performance.now()/40)>0?0xE9772F:0xffffff);}
+  function playPath(){if(!ready)return;setXray(false);spinOff();zoom=6.2;
+    const pts=PATHWAY.map(([id])=>id==='mouth'?surf([-.55,-.75,.95]).multiplyScalar(1.15):markers[id].position.clone());
+    pulse.visible=true;pulse.position.copy(pts[0]);pathAnim={pts,t0:performance.now(),dur:2200,seg:-1};$('#bPath').disabled=true;}
+  function renderRegions(){
+    $('#bRegions').innerHTML=REGIONS.map(R=>`<button class="region ${R.id===sel?'on':''}" data-r="${R.id}"><span class="dot" style="background:${R.color}"></span><span class="grow"><b>${R.name}</b><br><span class="small muted">${R.where}</span></span><span class="small muted">${R.kind}</span></button>`).join('');
+    const R=REGIONS.find(r=>r.id===sel);
+    $('#bDetail').innerHTML=R?`<div class="row"><span class="dot" style="background:${R.color};width:16px;height:16px"></span><h3 class="grow">${R.name}</h3><span class="pill" style="background:var(--soft);border:1px solid var(--line)">${R.kind}</span></div><p><b>ماذا تفعل.</b> ${R.does}</p><p><b>في الأبراكسيا.</b> ${R.apr}</p><button class="btn line sm" style="align-self:flex-start" id="bListen">${ic('volume')}استمع</button>`:
+      `<h3>اضغط على منطقة ملوّنة</h3><p class="small muted">كل لون هو جزء من الدماغ يساعد على تخطيط الكلام أو توقيته. اضغط زر المسار لتشاهد الكلمة تنتقل من الفكرة إلى الفم.</p>`;
+    const L=$('#bListen');if(L)L.onclick=()=>speak(R.name+'. '+R.does+' '+R.apr,{silent:true});
+  }
+  $('#bRegions').onclick=e=>{const b=e.target.closest('[data-r]');if(b){select(b.dataset.r,true);window.scrollTo({top:0,behavior:'smooth'});}};
+  $('#bXray').onclick=()=>ready&&setXray(!xray);
+  $('#bSpin').onclick=()=>{spin=!spin;$('#bSpin').classList.toggle('on',spin);};
+  $('#bReset').onclick=()=>{if(!ready)return;tRot={x:.12,y:Math.PI/2};zoom=5.6;select(null);setXray(false);};
+  $('#bPath').onclick=()=>{playPath();markDone('brain');};
+  window.addEventListener('resize',()=>{if(ready&&running)resize();});
+  return {start(){if(!ready)init();renderRegions();if(!ready)return;resize();if(!running){running=true;loop();}},stop(){running=false;cancelAnimationFrame(raf);}};
+})();
+hooks.brain=()=>Brain.start();
+
+/* ---------- boot ---------- */
+setPath(S.path);renderStars();route();
+</script>
+
+</body>
+</html>
